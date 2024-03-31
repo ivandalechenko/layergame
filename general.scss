@@ -1,0 +1,37 @@
+body {
+    background-color: black;
+}
+
+
+
+
+.app {
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.roadMapAndAbout {
+    background-image: url('/img/general/decor/stars.svg');
+}
+
+.gradientText {
+    display: inline-block;
+    background: linear-gradient(120deg, #30BBEE, #C659FC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.ddOpen {
+    grid-template-rows: 1fr !important;
+}
+
+.dnone {
+    display: none;
+}
+
+.ddOpener:hover {
+    cursor: pointer;
+}

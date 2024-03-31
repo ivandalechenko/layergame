@@ -1,0 +1,192 @@
+.ourMissionSubmit {
+    padding: 200px 15px;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+
+    @media(max-width: 1000px) {
+        flex-wrap: wrap;
+        padding: 0px 15px;
+    }
+
+    &_content {
+        width: 100%;
+        max-width: 645px;
+
+        @media(max-width: 1000px) {
+            max-width: 1000px;
+        }
+
+        &_preHeader {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            &_line {
+                width: 22px;
+                height: 2px;
+                background-color: white;
+            }
+
+            &_text {
+                text-transform: uppercase;
+                font-size: 24px;
+                font-weight: 500;
+
+                @media(max-width: 1000px) {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        &_header {
+            font-weight: 600;
+            font-size: 64px;
+            line-height: 62px;
+            margin-top: 40px;
+
+            @media(max-width: 1000px) {
+                font-size: 32px;
+                line-height: 35px;
+                margin-top: 20px;
+            }
+        }
+
+        &_p {
+            margin-top: 40px;
+            font-size: 18px;
+            line-height: 30px;
+            color: #8C8B92;
+
+            @media(max-width: 1000px) {
+                margin-top: 20px;
+                font-size: 16px;
+
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &_form {
+        width: 100%;
+
+        &_label {
+            font-size: 28px;
+            font-weight: 600;
+
+            @media(max-width: 1000px) {
+                font-size: 24px;
+            }
+        }
+
+        &_label:not(:first-child) {
+            margin-top: 30px;
+        }
+
+
+        &_textarea {
+            width: 100%;
+            border-radius: 10px;
+            border: none;
+            background: black;
+            color: white;
+            padding: 20px;
+            font-weight: 500;
+            font-size: 20px;
+            resize: none;
+            margin-bottom: -5px;
+            height: 164px;
+
+            @media(max-width: 1000px) {
+                font-size: 18px;
+                padding: 10px;
+            }
+
+            &_wrapper {
+                margin-top: 16px;
+                width: 100%;
+                padding: 2px;
+                border-radius: 10px;
+                background: linear-gradient(120deg, #30BBEE, #C659FC);
+            }
+        }
+
+        &_textarea:focus {
+            outline: none;
+        }
+
+        &_textarea::placeholder {
+            color: #8C8B92;
+        }
+
+        &_input {
+            width: 100%;
+            border-radius: 10px;
+            border: none;
+            background: black;
+            color: white;
+            padding: 20px;
+            font-weight: 500;
+            font-size: 20px;
+            height: 66px;
+
+            @media(max-width: 1000px) {
+                height: auto;
+                font-size: 18px;
+                padding: 14px 10px;
+            }
+
+
+            &_wrapper {
+                width: 100%;
+                padding: 2px;
+
+                border-radius: 10px;
+                background: linear-gradient(120deg, #30BBEE, #C659FC);
+            }
+        }
+
+        &_input:focus {
+            outline: none;
+        }
+
+        &_input::placeholder {
+            color: #8C8B92;
+        }
+
+        &_inputBlock {
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+
+            @media(max-width: 1000px) {
+                gap: 20px;
+            }
+
+            @media(max-width: 550px) {
+                flex-wrap: wrap;
+                justify-content: right;
+            }
+        }
+
+        &_btn {
+            height: 66px;
+            width: 100%;
+            max-width: 228px;
+            font-size: 24px;
+            font-weight: 500;
+            color: white;
+            background: linear-gradient(120deg, #30BBEE, #C659FC);
+            border-radius: 10px;
+
+            @media(max-width: 1000px) {
+                font-size: 18px;
+                height: 50px;
+            }
+        }
+
+    }
+}

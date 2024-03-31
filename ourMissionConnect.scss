@@ -1,0 +1,90 @@
+.ourMissionConnect {
+    padding: 300px 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @media(max-width: 1000px) {
+        margin-top: 300px;
+    }
+
+
+
+    &_header {
+        font-weight: 600;
+        font-size: 64px;
+        margin-top: 10px;
+        display: inline-block;
+        background: linear-gradient(120deg, #30BBEE, #C659FC);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+        text-align: center;
+
+        @media(max-width: 900px) {
+            font-size: 42px;
+        }
+
+        @media(max-width: 600px) {
+            font-size: 24px;
+        }
+    }
+
+    &_subHeader {
+        width: 100%;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 500;
+
+        br {
+            display: none;
+        }
+
+        @media(max-width: 900px) {
+            font-size: 24px;
+        }
+
+        @media(max-width: 600px) {
+            font-size: 18px;
+            margin-top: 15px;
+
+            br {
+                display: block;
+            }
+        }
+    }
+
+    &_decor {
+        width: 100%;
+        display: flex;
+        position: relative;
+        z-index: -1;
+        justify-content: center;
+
+        .free_img {
+            top: 100px;
+
+            svg {
+                min-width: 1623px;
+                height: 767px;
+            }
+
+            @media(max-width: 800px) {
+                top: 50px;
+
+                svg {
+                    min-width: 1000px;
+                    height: 473px;
+                }
+            }
+
+            @media(max-width: 600px) {
+                svg {
+                    min-width: 800px;
+                    height: 379px;
+                }
+            }
+        }
+    }
+}

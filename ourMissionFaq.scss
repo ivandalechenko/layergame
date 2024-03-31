@@ -1,0 +1,180 @@
+.weBuild_list_element {
+    &_p {
+        padding-left: 22px;
+        margin-top: 20px;
+        font-size: 20px;
+
+        @media(max-width: 650px) {
+            display: grid;
+            grid-template-rows: 0fr;
+            transition: grid-template-rows 300ms;
+            overflow: hidden;
+        }
+
+        &_wrapper {
+            min-height: 0px;
+        }
+
+    }
+}
+
+
+
+.ourMissionFaq {
+    padding: 60px 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @media(max-width: 1000px) {
+        padding: 0px 15px;
+        margin-top: 120px;
+    }
+
+    .gradientText {
+        font-weight: 600;
+    }
+
+    &_header {
+        text-align: center;
+        font-size: 64px;
+        font-weight: 600;
+
+        @media(max-width: 1000px) {
+            font-size: 32px;
+        }
+    }
+
+    &_list {
+        margin-top: 80px;
+        width: 100%;
+
+        @media(max-width: 1000px) {
+            margin-top: 40px;
+        }
+    }
+
+    &_element {
+
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 120px;
+        background: black;
+
+        @media(max-width: 1000px) {
+            min-height: 60px;
+        }
+
+
+        &_inner {
+            padding: 0px 30px;
+            padding-bottom: 0px;
+            background-color: black;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 35px;
+
+            display: grid;
+            grid-template-rows: 0fr;
+            transition: grid-template-rows 300ms, 300ms padding-bottom;
+            overflow: hidden;
+
+            @media(max-width: 1000px) {
+                padding: 0px 10px;
+            }
+
+            @media(max-width: 550px) {
+                font-size: 18px;
+                line-height: 24px;
+            }
+
+            &_wrapper {
+                min-height: 0px;
+            }
+        }
+
+        &_wrapper {
+            background: #2A2B3A;
+            padding: 1px;
+
+            .ddOpen {
+                padding-bottom: 30px;
+
+                @media(max-width: 1000px) {
+                    padding-bottom: 10px;
+                }
+
+            }
+        }
+
+        &_control {
+            padding: 0px 30px;
+
+            @media(max-width: 1000px) {
+                padding: 0px 10px;
+            }
+
+            img {
+                transition: 300ms transform;
+            }
+
+            .openerOpen {
+                transform: rotate(180deg);
+            }
+        }
+
+        &_num {
+            width: 100px;
+            text-align: center;
+
+            @media(max-width: 1000px) {
+                width: 60px;
+            }
+        }
+
+        &_header {
+            padding: 10px 60px;
+            width: 100%;
+            border-left: 1px solid #2A2B3A;
+            border-right: 1px solid #2A2B3A;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            transition: 150ms border-left, 150ms border-right;
+
+            @media(max-width: 1000px) {
+                padding: 10px 15px;
+                height: auto;
+                min-height: 60px;
+            }
+        }
+
+        &_header,
+        &_num {
+            &_text {
+                font-size: 24px;
+                font-weight: 500;
+
+                @media(max-width: 550px) {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    &_element_wrapper:not(:first-child) {
+        margin-top: -1px;
+    }
+
+    &_open {
+        background: linear-gradient(120deg, #30BBEE, #C659FC);
+        position: relative;
+        z-index: 1;
+
+        .ourMissionFaq_element_header {
+            border: 1px solid #2A2B3A00;
+        }
+    }
+}

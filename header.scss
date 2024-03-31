@@ -1,0 +1,50 @@
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 120px;
+
+        @media(max-width: 550px) {
+            height: 100px;
+        }
+    }
+
+    &_logo {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        @media(max-width: 550px) {
+            gap: 10px;
+        }
+
+        img {
+            height: 65px;
+
+            @media(max-width: 550px) {
+                height: 40px;
+            }
+        }
+
+        &_text {
+            text-transform: uppercase;
+            font-family: "Molot";
+            font-size: 36px;
+
+            @media(max-width: 550px) {
+                font-size: 24px;
+            }
+        }
+    }
+
+    &_link {
+        @media(max-width: 550px) {
+            display: none;
+        }
+    }
+}

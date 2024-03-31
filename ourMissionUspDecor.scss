@@ -1,0 +1,164 @@
+.ourMissionUsp {
+    &_text {
+        top: -30vh;
+        z-index: 1;
+    }
+
+
+    .rocks {
+        z-index: -1;
+        top: 250px;
+
+        @media(max-width: 850px) {
+            top: 100px;
+
+            img {
+                transform: rotate(90deg);
+                height: 100vw;
+            }
+        }
+    }
+
+    .rock1 {
+        z-index: 1;
+        top: 300px;
+        left: -400px;
+        // animation: rock1anim 21s infinite alternate;
+
+        @media(max-width: 1300px) {
+            top: 300px;
+
+            img {
+                width: 350px;
+            }
+        }
+
+        @media(max-width: 850px) {
+            top: 200px;
+            left: -250px;
+
+            img {
+                width: 200px;
+            }
+        }
+
+        @media(max-width: 550px) {
+            top: 140px;
+            left: -150px;
+
+            img {
+                width: 160px;
+            }
+        }
+
+        @keyframes rock1anim {
+            from {
+                transform: translate(0px, 0px);
+            }
+
+            to {
+                transform: translate(0px, 80px);
+            }
+        }
+    }
+
+    .rock2 {
+        z-index: 1;
+        top: -50px;
+        left: -255px;
+        // animation: rock2anim 15s infinite alternate;
+
+        @media(max-width: 1300px) {
+            img {
+                width: 250px;
+            }
+        }
+
+        @media(max-width: 850px) {
+            top: -50px;
+            left: 100px;
+
+            img {
+                width: 200px;
+            }
+        }
+
+        @media(max-width: 550px) {
+            top: -30px;
+            left: 60px;
+
+            img {
+                width: 140px;
+            }
+        }
+
+        @keyframes rock2anim {
+            from {
+                transform: translate(0px, 0px);
+            }
+
+            to {
+                transform: translate(0px, -80px);
+            }
+        }
+    }
+
+    .rock3 {
+        z-index: 1;
+        top: 120px;
+        left: 800px;
+
+        // animation: rock3anim 32s infinite alternate;
+
+        @media(max-width: 1300px) {
+            left: 300px;
+            top: 230px;
+
+            img {
+                width: 250px;
+            }
+        }
+
+        @media(max-width: 550px) {
+            top: 120px;
+            left: 160px;
+
+            img {
+                width: 140px;
+            }
+        }
+
+
+        @keyframes rock3anim {
+            from {
+                transform: translate(0px, 0px);
+            }
+
+            to {
+                transform: translate(200px, 100px);
+            }
+        }
+    }
+
+    .rock4 {
+        z-index: 0;
+        top: 70px;
+        left: 320px;
+
+        @media(max-width: 850px) {
+            display: none;
+        }
+
+        // animation: rock4anim 16s infinite alternate;
+
+        @keyframes rock4anim {
+            from {
+                transform: translate(0px, 0px);
+            }
+
+            to {
+                transform: translate(-50px, -30px);
+            }
+        }
+    }
+}

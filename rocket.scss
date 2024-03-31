@@ -1,0 +1,104 @@
+.rocket {
+    // position: absolute;
+    left: 50%;
+    z-index: 1;
+    top: calc(100vh - 100px);
+
+    @media(max-width: 1200px) {
+        top: calc(100vh - 80px);
+    }
+
+    @media(max-width: 550px) {
+        top: calc(100vh - 85px - 80px);
+    }
+
+
+    img {
+        height: 600px;
+        max-height: 50vh;
+
+        @media(max-width: 1200px) {
+            height: 400px;
+        }
+
+        @media(max-width: 800px) {
+            height: 300px;
+        }
+    }
+}
+
+.rocketMain {
+    left: -100vw;
+    z-index: 10;
+
+    img {
+        height: 600px;
+        max-height: 50vh;
+
+        @media(max-width: 1200px) {
+            height: 400px;
+        }
+
+        @media(max-width: 800px) {
+            height: 300px;
+        }
+
+        opacity: 0;
+    }
+}
+
+.rocketPath {
+    @media(max-width: 1000px) {
+        height: 3600px;
+    }
+
+    &Wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .free_img {
+            align-items: baseline;
+        }
+
+        svg {
+            position: absolute;
+        }
+    }
+}
+
+.landLight {
+    position: relative;
+    left: 50%;
+    z-index: 0;
+    top: 100vh;
+
+    @media(max-width: 550px) {
+        top: calc(100vh - 80px);
+    }
+}
+
+.landLightBot {
+    position: absolute;
+    left: 50%;
+    z-index: 0;
+    top: 100vh;
+    align-items: end;
+
+    img {
+        transform: rotate(180deg);
+        width: 90vw;
+    }
+}
+
+.landLightFront {
+    position: absolute;
+    align-items: baseline;
+    left: 50%;
+    z-index: 1;
+    top: 100vh;
+
+    img {
+        width: 90vw;
+    }
+}
