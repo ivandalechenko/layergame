@@ -166,38 +166,16 @@ setTimeout(() => {
             },
         });
 
+    });
+    function restartAnimation() {
+        // Удаление текущей анимации
+        gsap.killTweensOf("#rocketMain");
 
-        // Полет ракеты по звёздному небу
-        gsap.to("#rocketMain", {
-            ease: "none",
-            motionPath: {
-                path: '#rocketPath',
-                align: '#rocketPath',
-                alignOrigin: [.5, .3],
-                autoRotate: 90,
-            },
-            scrollTrigger: {
-                trigger: ".roadMapAndAbout",
-                start: '-5% top',
-                end: "75%, top",
-                scrub: 3,
-                // markers: true,
-                onUpdate: function (self) {
-                    var progress = self.progress * 100;
-                    if (progress >= 5) {
-                        gsap.to("#rocketMain", { opacity: 1, duration: 0.5 });
-                    }
-                    if (progress < 5) {
-                        gsap.to("#rocketMain", { opacity: 0, duration: 0.5 });
-                    }
-                }
-            },
-        })
+        let mm = gsap.matchMedia();
+        // USP хедер
+        gsap.to('#ourMissionUspText', { duration: 4, text: { value: "Welcome aboard the LAYERGAME Space Station!" } })
 
-        function restartAnimation() {
-            // Удаление текущей анимации
-            gsap.killTweensOf("#rocketMain");
-
+        mm.add("(min-width: 800px)", () => {
             // Перезапуск анимации
             gsap.to("#rocketMain", {
                 ease: "none",
@@ -224,15 +202,15 @@ setTimeout(() => {
                     }
                 },
             });
-        }
+        })
 
-        // Добавление обработчика события изменения размера окна
-        window.addEventListener("resize", restartAnimation);
+    }
 
-        // Запуск анимации при загрузке страницы
-        restartAnimation();
-    });
+    // Добавление обработчика события изменения размера окна
+    window.addEventListener("resize", restartAnimation);
 
+    // Запуск анимации при загрузке страницы
+    restartAnimation();
 
 
 }, 500);
@@ -265,7 +243,7 @@ try {
 } catch (error) {
 }
 
-document.getElementById('ourMissionConnectDecor').innerHTML = `<svg width="1623" height="767" viewBox="0 0 1623 767" fill="none" xmlns="http://www.w3.org/2000/svg">
+document.getElementById('ourMissionConnectDecor').innerHTML = `<svg width="1623" height="767" viewBox="0 -50 1623 717" fill="none" xmlns="http://www.w3.org/2000/svg">
 
 <g filter="url(#filter0_f_2733_1444)">
 <ellipse cx="811.5" cy="516.5" rx="611.5" ry="599.5" fill="black"/>
