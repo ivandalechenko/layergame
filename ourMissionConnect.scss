@@ -70,6 +70,13 @@
                 height: 767px;
             }
 
+            @media(max-width: 1000px) {
+
+                svg {
+                    min-width: 1223px;
+                }
+            }
+
             @media(max-width: 800px) {
                 top: 50px;
 

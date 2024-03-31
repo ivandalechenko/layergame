@@ -1,4 +1,4 @@
-import './style.scss'
+import './ourMission.scss'
 import gsap from 'gsap';
 import { MotionPathPlugin, ScrollTrigger, TextPlugin } from 'gsap/all';
 gsap.registerPlugin(ScrollTrigger, MotionPathPlugin, TextPlugin)
@@ -14,21 +14,25 @@ setTimeout(() => {
         gsap.to("#mediaPlanet1", {
             ease: "none",
             repeat: -1,
-            duration: 90,
+            duration: 80,
             motionPath: {
                 path: '#mediaOrbit1',
                 align: '#mediaOrbit1',
                 alignOrigin: [.5, .5],
+                start: 0.5,
+                end: 1,
             },
         })
         gsap.to("#mediaPlanet2", {
             ease: "none",
             repeat: -1,
-            duration: 30,
+            duration: 8,
             motionPath: {
                 path: '#mediaOrbit2',
                 align: '#mediaOrbit2',
                 alignOrigin: [.5, .5],
+                start: 0.2,
+                end: 0.85,
             },
         })
         gsap.to("#mediaPlanet3", {
@@ -39,18 +43,20 @@ setTimeout(() => {
                 path: '#mediaOrbit3',
                 align: '#mediaOrbit3',
                 alignOrigin: [.5, .5],
+                start: 1,
+                end: 0.5,
             },
         })
         gsap.to("#mediaPlanet4", {
             ease: "none",
             repeat: -1,
-            duration: 230,
+            duration: 56,
             motionPath: {
-                path: '#mediaOrbit4',
-                align: '#mediaOrbit4',
+                path: '#d',
+                align: '#d',
                 alignOrigin: [.5, .5],
-                end: 0,
-                start: 1,
+                start: 0.5,
+                end: 1,
             },
         })
         // Улёт ракеты на первом экране и скрытие света под ней
@@ -82,11 +88,27 @@ setTimeout(() => {
             opacity: 1,
             scrollTrigger: {
                 trigger: "#roadMap_header",
-                start: 'top 70%',
-                end: 'end 50%',
-                scrub: 0.5,
+                start: 'top 60%',
+                end: 'end 40%',
+                scrub: 1,
             },
         });
+
+        gsap.fromTo("#aboutOurMission_content", {
+            opacity: 0,
+            y: -200
+        }, {
+            opacity: 1,
+            y: 0,
+            scrollTrigger: {
+                trigger: "#aboutOurMission_content",
+                start: 'center 60%',
+                end: 'center 40%',
+                scrub: 0.5,
+                // markers: true
+            },
+        });
+
         // Роадмап
         gsap.fromTo("#roadMap_list_element_q1", {
             opacity: 0,
@@ -96,8 +118,8 @@ setTimeout(() => {
             y: 0,
             scrollTrigger: {
                 trigger: "#roadMap_list_element_q1",
-                start: 'top 70%',
-                end: 'end 50%',
+                start: 'top 60%',
+                end: 'end 40%',
                 scrub: 0.5,
             },
         });
@@ -110,8 +132,8 @@ setTimeout(() => {
             x: 0,
             scrollTrigger: {
                 trigger: "#roadMap_list_element_q2",
-                start: 'top 70%',
-                end: 'end 50%',
+                start: 'top 60%',
+                end: 'end 40%',
                 scrub: 0.5,
             },
         });
@@ -124,8 +146,8 @@ setTimeout(() => {
             y: 0,
             scrollTrigger: {
                 trigger: "#roadMap_list_element_q3",
-                start: 'top 70%',
-                end: 'end 50%',
+                start: 'top 60%',
+                end: 'end 40%',
                 scrub: 0.5,
             },
         });
@@ -138,8 +160,8 @@ setTimeout(() => {
             x: 0,
             scrollTrigger: {
                 trigger: "#roadMap_list_element_q4",
-                start: 'top 70%',
-                end: 'end 50%',
+                start: 'top 60%',
+                end: 'end 40%',
                 scrub: 0.5,
             },
         });
@@ -148,10 +170,6 @@ setTimeout(() => {
         // Полет ракеты по звёздному небу
         gsap.to("#rocketMain", {
             ease: "none",
-
-            // ease: "steps(40)",
-            // ease: "power1.in",
-            // ease: "circ.in",
             motionPath: {
                 path: '#rocketPath',
                 align: '#rocketPath',
@@ -176,7 +194,43 @@ setTimeout(() => {
             },
         })
 
+        function restartAnimation() {
+            // Удаление текущей анимации
+            gsap.killTweensOf("#rocketMain");
 
+            // Перезапуск анимации
+            gsap.to("#rocketMain", {
+                ease: "none",
+                motionPath: {
+                    path: '#rocketPath',
+                    align: '#rocketPath',
+                    alignOrigin: [.5, .3],
+                    autoRotate: 90,
+                },
+                scrollTrigger: {
+                    trigger: ".roadMapAndAbout",
+                    start: '-5% top',
+                    end: "75%, top",
+                    scrub: 3,
+                    // markers: true,
+                    onUpdate: function (self) {
+                        var progress = self.progress * 100;
+                        if (progress >= 5) {
+                            gsap.to("#rocketMain", { opacity: 1, duration: 0.5 });
+                        }
+                        if (progress < 5) {
+                            gsap.to("#rocketMain", { opacity: 0, duration: 0.5 });
+                        }
+                    }
+                },
+            });
+        }
+
+        // Добавление обработчика события изменения размера окна
+        window.addEventListener("resize", restartAnimation);
+
+        // Запуск анимации при загрузке страницы
+        restartAnimation();
     });
 
 
@@ -212,6 +266,7 @@ try {
 }
 
 document.getElementById('ourMissionConnectDecor').innerHTML = `<svg width="1623" height="767" viewBox="0 0 1623 767" fill="none" xmlns="http://www.w3.org/2000/svg">
+
 <g filter="url(#filter0_f_2733_1444)">
 <ellipse cx="811.5" cy="516.5" rx="611.5" ry="599.5" fill="black"/>
 </g>
@@ -221,12 +276,17 @@ document.getElementById('ourMissionConnectDecor').innerHTML = `<svg width="1623"
 <path d="M1097.37 661.753C1096.45 661.884 1094.78 662.595 1093.68 663.345C1086.01 668.637 1090.24 680.547 1099.55 679.861C1105.75 679.414 1109.6 673.228 1107.3 667.46C1105.72 663.522 1101.63 661.181 1097.37 661.753Z" fill="url(#paint3_linear_2733_1444)" fill-opacity="0.3"/>
 <path d="M484.59 486.681C485.393 489.425 482.89 492.475 479.92 492.205C475.906 491.84 474.374 486.885 477.395 484.367C480.109 482.105 483.488 483.222 484.59 486.681Z" fill="url(#paint4_linear_2733_1444)" fill-opacity="0.3"/>
 <path d="M401.804 644.241C408.269 646.884 408.874 656.554 402.825 659.996C396.11 663.712 388.24 658.081 389.785 650.606C390.955 645.155 396.689 642.135 401.804 644.241Z" fill="url(#paint5_linear_2733_1444)" fill-opacity="0.3"/>
-<path id='mediaOrbit2' d="M1320.45 618.468C1320.45 890.651 1095.3 1111.33 817.532 1111.33C539.761 1111.33 314.618 890.651 314.618 618.468C314.618 346.285 539.761 125.602 817.532 125.602C1095.3 125.602 1320.45 346.285 1320.45 618.468Z" stroke="url(#paint6_linear_2733_1444)" stroke-opacity="0.8" stroke-width="2.00965"/>
+
+<path d="M817.532 125.602C1095.3 125.602 1320.45 346.285 1320.45 618.468C1320.45 890.651 1095.3 1111.33 817.532 1111.33C539.761 1111.33 314.618 890.651 314.618 618.468C314.618 346.285 539.761 125.602 817.532 125.602Z" stroke="url(#paint6_linear_2733_1444)" stroke-opacity="0.8" stroke-width="2.00965" />
+<path id='mediaOrbit2' d="M817.532 125.602C1095.3 125.602 1320.45 346.285 1320.45 618.468C1320.45 890.651 1095.3 1111.33 817.532 1111.33C539.761 1111.33 314.618 890.651 314.618 618.468C314.618 346.285 539.761 125.602 817.532 125.602Z" transform="rotate(180, 817.532, 618.468)"/>
+
+
 <path id='mediaOrbit1' d="M1264 618.5C1264 860.103 1064.11 1056 817.5 1056C570.888 1056 371.005 860.103 371.005 618.5C371.005 376.897 570.888 181.005 817.5 181.005C1064.11 181.005 1264 376.897 1264 618.5Z" stroke="url(#paint7_linear_2733_1444)" stroke-opacity="0.9" stroke-width="2.00965"/>
+
 <path id='mediaOrbit3' d="M1378.22 618.468C1378.22 925.351 1127.2 1174.14 817.53 1174.14C507.864 1174.14 256.838 925.351 256.838 618.468C256.838 311.586 507.864 62.8012 817.53 62.8012C1127.2 62.8012 1378.22 311.586 1378.22 618.468Z" stroke="url(#paint8_linear_2733_1444)" stroke-opacity="0.6" stroke-width="1.00482"/>
 <circle  cx="817.531" cy="618.469" r="617.464" />
 
-<path id='mediaOrbit4' d="M200.0669999999999,618.469a617.464,617.464 0 1,0 1234.928,0a617.464,617.464 0 1,0 -1234.928,0" stroke="url(#paint9_linear_2733_1444)" stroke-opacity="0.4" stroke-width="2.00965"/>
+<path id='d' d="M200.0669999999999,618.469a617.464,617.464 0 1,0 1234.928,0a617.464,617.464 0 1,0 -1234.928,0" stroke="url(#paint9_linear_2733_1444)" stroke-opacity="0.4" stroke-width="2.00965"/>
 <g id="mediaPlanet1">
 <circle cx="1236" cy="471" r="34" stroke="#C35CFC" stroke-width="2"/>
 <circle cx="1235.5" cy="471.5" r="22.5" fill="#C35CFC"/>
