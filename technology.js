@@ -50,7 +50,6 @@ setTimeout(() => {
             start: '-200px top',
             end: '10px top',
             toggleClass: { targets: "#navigator2_1_link", className: "technologyMultiplanet_navigator_element_active" },
-            markers: true,
         }
     })
     gsap.to('#navigator2_2_link', {
