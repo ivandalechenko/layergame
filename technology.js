@@ -33,6 +33,62 @@ try {
 setTimeout(() => {
 
 
+    gsap.to('#navigator2', {
+        y: document.getElementById('navigator2content').getBoundingClientRect().height / 3,
+        ease: 'none',
+        scrollTrigger: {
+            trigger: '#navigator2content',
+            scrub: 1,
+            start: '400px top',
+            end: "50% top",
+        }
+    })
+    gsap.to('#navigator2_1_link', {
+        scrollTrigger: {
+            trigger: '#navigator2_1_block',
+            scrub: 1,
+            start: '-200px center',
+            end: '10px center',
+            toggleClass: { targets: "#navigator2_1_link", className: "technologyMultiplanet_navigator_element_active" },
+            markers: true,
+        }
+    })
+    gsap.to('#navigator2_2_link', {
+        scrollTrigger: {
+            trigger: '#navigator2_2_block',
+            scrub: 1,
+            start: '-200px top',
+            end: '10px top',
+            toggleClass: { targets: "#navigator2_2_link", className: "technologyMultiplanet_navigator_element_active" },
+        }
+    })
+    gsap.to('#navigator2_3_link', {
+        scrollTrigger: {
+            trigger: '#navigator2_3_block',
+            scrub: 1,
+            start: '-200px top',
+            end: '10px top',
+            toggleClass: { targets: "#navigator2_3_link", className: "technologyMultiplanet_navigator_element_active" },
+        }
+    })
+    gsap.to('#navigator2_4_link', {
+        scrollTrigger: {
+            trigger: '#navigator2_4_block',
+            scrub: 1,
+            start: '-200px top',
+            end: '10px top',
+            toggleClass: { targets: "#navigator2_4_link", className: "technologyMultiplanet_navigator_element_active" },
+        }
+    })
+    gsap.to('#navigator2_5_link', {
+        scrollTrigger: {
+            trigger: '#navigator2_5_block',
+            scrub: 1,
+            start: '-200px top',
+            end: '10px top',
+            toggleClass: { targets: "#navigator2_5_link", className: "technologyMultiplanet_navigator_element_active" },
+        }
+    })
     gsap.to('#navigator', {
         y: document.getElementById('navigatorContent').getBoundingClientRect().height / 1.3,
         ease: 'none',
@@ -43,6 +99,7 @@ setTimeout(() => {
             end: "80% top"
         }
     })
+
     gsap.to('#navigatorMenu1', {
         scrollTrigger: {
             trigger: '#navigatorBlock1',
@@ -75,4 +132,6 @@ setTimeout(() => {
             toggleClass: { targets: "#navigatorMenu4", className: "technologyMultiplanet_navigator_element_active" }
         }
     })
+
+
 }, 500);
