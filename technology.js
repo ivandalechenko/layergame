@@ -1,4 +1,7 @@
+import gsap from 'gsap';
 import './technology.scss'
+import { MotionPathPlugin, ScrollTrigger, TextPlugin } from 'gsap/all';
+gsap.registerPlugin(ScrollTrigger, MotionPathPlugin, TextPlugin)
 
 try {
     // Выпадалочки (все)
@@ -27,4 +30,49 @@ try {
 } catch (error) {
 }
 
+setTimeout(() => {
 
+
+    gsap.to('#navigator', {
+        y: document.getElementById('navigatorContent').getBoundingClientRect().height / 1.3,
+        ease: 'none',
+        scrollTrigger: {
+            trigger: '#navigatorContent',
+            scrub: 1,
+            start: '400px top',
+            end: "80% top"
+        }
+    })
+    gsap.to('#navigatorMenu1', {
+        scrollTrigger: {
+            trigger: '#navigatorBlock1',
+            scrub: 1,
+            start: '-10px top',
+            toggleClass: { targets: "#navigatorMenu1", className: "technologyMultiplanet_navigator_element_active" }
+        }
+    })
+    gsap.to('#navigatorMenu2', {
+        scrollTrigger: {
+            trigger: '#navigatorBlock2',
+            scrub: 1,
+            start: '-10px top',
+            toggleClass: { targets: "#navigatorMenu2", className: "technologyMultiplanet_navigator_element_active" }
+        }
+    })
+    gsap.to('#navigatorMenu3', {
+        scrollTrigger: {
+            trigger: '#navigatorBlock3',
+            scrub: 1,
+            start: '-10px top',
+            toggleClass: { targets: "#navigatorMenu3", className: "technologyMultiplanet_navigator_element_active" }
+        }
+    })
+    gsap.to('#navigatorMenu4', {
+        scrollTrigger: {
+            trigger: '#navigatorBlock4',
+            scrub: 1,
+            start: '-10px top',
+            toggleClass: { targets: "#navigatorMenu4", className: "technologyMultiplanet_navigator_element_active" }
+        }
+    })
+}, 500);

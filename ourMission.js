@@ -3,6 +3,7 @@ import gsap from 'gsap';
 import { MotionPathPlugin, ScrollTrigger, TextPlugin } from 'gsap/all';
 gsap.registerPlugin(ScrollTrigger, MotionPathPlugin, TextPlugin)
 
+
 setTimeout(() => {
     let mm = gsap.matchMedia();
     // USP хедер
@@ -214,7 +215,6 @@ setTimeout(() => {
 
 
 }, 500);
-
 
 try {
     // Выпадалочки (все)
