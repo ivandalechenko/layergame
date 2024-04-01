@@ -47,8 +47,8 @@ setTimeout(() => {
         scrollTrigger: {
             trigger: '#navigator2_1_block',
             scrub: 1,
-            start: '-200px center',
-            end: '10px center',
+            start: '-200px top',
+            end: '10px top',
             toggleClass: { targets: "#navigator2_1_link", className: "technologyMultiplanet_navigator_element_active" },
             markers: true,
         }
