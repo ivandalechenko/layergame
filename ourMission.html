@@ -9,8 +9,47 @@
 
 </head>
 
-<body>
+<body id="body">
+  <!-- <body style="overflow: hidden;"> -->
   <div class="app">
+    <div class="menu" id="menu">
+      <div class="menu_inner_wrapper">
+        <div class="menu_inner">
+          <div class="menu_inner_container container">
+            <div class="menu_nav container">
+              <a href="/technology.html" class="menu_nav_link" id="menuNavLinkTechnology">
+                Technology
+              </a>
+              <a href="/ourMission.html" class="menu_nav_link" id="menuNavLinkOurMission">
+                Our Mission
+              </a>
+            </div>
+            <div class="menu_header_wrapper">
+              <div class="menu_header gradientText" id="menuHeader">
+              </div>
+            </div>
+            <div class="menu_subHeader" id="menuSubheader">
+            </div>
+            <div class="menu_links" style='opacity: 0;' id="menuLinks">
+              <a class="menu_link" id="menuTgLink" style='opacity: 0;'>
+                Telegram
+              </a>
+              <a class="menu_link gradientText" id="menuDocAndDiscordLink">
+                Docs
+              </a>
+              <a class="menu_link" id="menuTwitterLink" style='opacity: 0;'>
+                Twitter
+              </a>
+            </div>
+          </div>
+          <div class="menu_inner_decor">
+            <div class="free_img">
+              <img src="/img/general/decor/menuDecor.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="navMob">
       <div class="navMob_element">
         <img src="/img/mobMenu/home.svg" alt="">
@@ -58,14 +97,12 @@
 
     <header class="header">
       <div class="container">
-        <div class="header_logo">
-          <img src="/img/general/logo.svg" alt="">
-          <div class="header_logo_text gradientText">
-            layergame
-          </div>
-        </div>
+        <a href="/index.html" class="header_logo">
+          <img src="/img/general/headerLogo.svg" alt="">
+        </a>
         <div class="header_link">
-          <img src="/img/general/headerLink.svg" alt="">
+          <img src="/img/general/headerLinkLaunch.svg" class="header_link_launch" alt="">
+          <img src="/img/general/headerLinkMenu.svg" id="menuOpener" alt="">
         </div>
       </div>
     </header>

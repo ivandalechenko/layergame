@@ -1,13 +1,25 @@
+#menuOpener {
+    transition: 300ms transform;
+}
+
+#menuOpener:hover {
+    transform: rotate(3deg) scale(1.1);
+    cursor: pointer;
+}
+
 .header {
     position: fixed;
     width: 100%;
-    z-index: 99999;
+    z-index: 101;
+    // background: #0003;
+    // background: linear-gradient(to bottom, #000, #0009, #0000);
 
     .container {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        height: 120px;
+        align-items: baseline;
+        height: 0px;
+        padding-top: 20px;
 
         @media(max-width: 550px) {
             height: 100px;
@@ -18,16 +30,18 @@
         display: flex;
         align-items: center;
         gap: 15px;
+        transition: 300ms transform;
 
         @media(max-width: 550px) {
             gap: 10px;
         }
 
         img {
-            height: 65px;
+            height: 67px;
+            filter: drop-shadow(0px 0px 10px black);
 
             @media(max-width: 550px) {
-                height: 40px;
+                height: 42px;
             }
         }
 
@@ -42,7 +56,16 @@
         }
     }
 
+    &_logo:hover {
+        cursor: pointer;
+        transform: rotate(3deg) scale(1.1);
+    }
+
     &_link {
+        &_launch {
+            margin-right: -8px;
+        }
+
         @media(max-width: 550px) {
             display: none;
         }
