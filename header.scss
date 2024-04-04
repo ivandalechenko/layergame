@@ -1,9 +1,4 @@
-#menuOpener {
-    transition: 300ms transform;
-}
-
 #menuOpener:hover {
-    transform: rotate(3deg) scale(1.1);
     cursor: pointer;
 }
 
@@ -59,7 +54,7 @@
 
     &_logo:hover {
         cursor: pointer;
-        transform: rotate(3deg) scale(1.1);
+        // transform: rotate(3deg) scale(1.1);
     }
 
     &_link {
