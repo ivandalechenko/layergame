@@ -55,7 +55,7 @@ setTimeout(() => {
         gsap.to("#mediaPlanet2", {
             ease: "none",
             repeat: -1,
-            duration: 8,
+            duration: 130,
             motionPath: {
                 path: '#mediaOrbit2',
                 align: '#mediaOrbit2',
@@ -272,10 +272,6 @@ try {
 }
 
 document.getElementById('ourMissionConnectDecor').innerHTML = `<svg width="1623" height="767" viewBox="0 -50 1623 717" fill="none" xmlns="http://www.w3.org/2000/svg">
-
-<g filter="url(#filter0_f_2733_1444)">
-<ellipse cx="811.5" cy="516.5" rx="611.5" ry="599.5" fill="black"/>
-</g>
 <path d="M567.47 724.08C572.436 726.21 571.097 733.131 565.747 733.42C560.056 733.726 558.13 726.581 563.246 724.079C565.584 722.983 565.072 723.011 567.47 724.08Z" fill="url(#paint0_linear_2733_1444)" fill-opacity="0.3"/>
 <path d="M1020.54 494.303C1019.28 499.557 1025.62 502.622 1029.05 498.506C1032.7 494.128 1028.13 488.311 1023.06 490.917C1020.79 492.135 1021.12 491.741 1020.54 494.303Z" fill="url(#paint1_linear_2733_1444)" fill-opacity="0.3"/>
 <path d="M517.467 453.127C517.919 454.382 518.131 456.951 517.919 458.834C516.357 472.006 498.559 474.596 493.232 462.417C489.678 454.324 494.903 445.37 503.689 444.428C509.695 443.801 515.358 447.391 517.467 453.127Z" fill="url(#paint2_linear_2733_1444)" fill-opacity="0.3"/>
@@ -588,3 +584,17 @@ document.getElementById('ourMissionConnectDecor').innerHTML = `<svg width="1623"
 </svg>
 `
 
+setTimeout(() => {
+    document.getElementById('mediaPlanet1').onclick = () => {
+        window.open('https://google.com', '_blank');
+    }
+    document.getElementById('mediaPlanet2').onclick = () => {
+        window.open('https://google.com', '_blank');
+    }
+    document.getElementById('mediaPlanet3').onclick = () => {
+        window.open('https://google.com', '_blank');
+    }
+    document.getElementById('mediaPlanet4').onclick = () => {
+        window.open('https://google.com', '_blank');
+    }
+}, 1000);

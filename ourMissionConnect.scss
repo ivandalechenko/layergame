@@ -1,3 +1,19 @@
+#mediaPlanet1,
+#mediaPlanet2,
+#mediaPlanet3,
+#mediaPlanet4 {
+    transition: 200ms opacity;
+}
+
+#mediaPlanet1:hover,
+#mediaPlanet2:hover,
+#mediaPlanet3:hover,
+#mediaPlanet4:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+
 .ourMissionConnect {
     padding: 300px 0px;
     display: flex;
@@ -26,6 +42,8 @@
         background-clip: text;
         color: transparent;
         text-align: center;
+        position: relative;
+        z-index: 1;
 
         @media(max-width: 900px) {
             font-size: 42px;
@@ -41,6 +59,8 @@
         text-align: center;
         font-size: 36px;
         font-weight: 500;
+        position: relative;
+        z-index: 1;
 
         br {
             display: none;
@@ -66,7 +86,7 @@
         justify-content: center;
         width: 100%;
         position: relative;
-        z-index: -1;
+        z-index: 0;
         justify-content: center;
         display: none;
 
@@ -87,7 +107,7 @@
         width: 100%;
         display: flex;
         position: relative;
-        z-index: -1;
+        z-index: 2;
         justify-content: center;
 
         .free_img {
