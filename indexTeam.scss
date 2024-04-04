@@ -1,0 +1,79 @@
+.indexTeam {
+    margin-top: 300px;
+
+    &_header {
+        font-size: 48px;
+        font-weight: 600;
+
+        &_wrapper {
+            border-top: 10px solid #12111C;
+            padding: 30px 0px;
+        }
+    }
+
+    &_elements {
+        width: fit-content;
+        // background-color: #fff1;
+        display: flex;
+
+        column-gap: 50px;
+        // column-gap: 0px;
+    }
+
+    &_element {
+        &_description {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+            gap: 0px;
+        }
+
+        &_skills {
+            max-width: 480px;
+            font-size: 24px;
+            text-transform: capitalize;
+        }
+
+        &_name {
+            font-size: 32px;
+            font-weight: 500;
+        }
+
+        &_role {
+            font-size: 24px;
+            font-weight: 500;
+            margin-top: 12px;
+        }
+    }
+
+    &_card {
+        // width: 1000px;
+        width: 860px;
+        background-color: black;
+        border-radius: 25px;
+        padding: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: space-between;
+
+        &_header {
+            width: 100%;
+        }
+
+        &_media {
+            width: 100%;
+            display: flex;
+            justify-content: right;
+        }
+
+        &_wrapper {
+            padding: 2px;
+            background: linear-gradient(120deg, #30BBEE, #C659FC);
+            border-radius: 25px;
+        }
+    }
+}

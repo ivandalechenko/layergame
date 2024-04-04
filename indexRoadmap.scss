@@ -1,0 +1,80 @@
+.indexRoadmap {
+    margin-top: 300px;
+
+    &_explore {
+        display: block;
+        font-size: 40px;
+        font-weight: 600;
+
+        &_wrapper {
+            margin-top: 60px;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+    }
+
+    &_element {
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        column-gap: 60px;
+        align-items: center;
+
+        &_subHeader {
+            font-size: 40px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        &_header {
+            text-transform: uppercase;
+            margin-top: 10px;
+            font-size: 64px;
+            font-weight: 700;
+        }
+
+        &_p {
+            font-size: 32px;
+            font-weight: 500;
+            color: #8C8B92
+        }
+
+        &_num,
+        &_content {
+            width: 50%
+        }
+
+        &_num {
+            display: flex;
+            justify-content: left;
+        }
+    }
+
+    &_delimeter {
+        &_wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            .free_img {
+                align-items: baseline;
+                top: 100px;
+            }
+        }
+
+        min-width: 3px;
+        height: 1700px;
+        background: linear-gradient(0deg, rgba(20, 156, 232, 0) 0%, rgba(20, 156, 232, 1) 5%, rgba(195, 92, 252, 1) 95%, rgba(195, 92, 252, 0) 100%);
+
+    }
+
+}
+
+.indexRoadmap_element:nth-child(2n) {
+    .indexRoadmap_element_num {
+        display: flex;
+        justify-content: right;
+    }
+}

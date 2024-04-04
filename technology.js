@@ -31,14 +31,12 @@ try {
 }
 
 setTimeout(() => {
-
-
     gsap.to('#navigator2', {
         y: document.getElementById('navigator2content').getBoundingClientRect().height / 3,
         ease: 'none',
         scrollTrigger: {
             trigger: '#navigator2content',
-            scrub: 1,
+            scrub: 0.3,
             start: '400px top',
             end: "50% top",
         }
@@ -93,7 +91,7 @@ setTimeout(() => {
         ease: 'none',
         scrollTrigger: {
             trigger: '#navigatorContent',
-            scrub: 1,
+            scrub: 0.3,
             start: '400px top',
             end: "80% top"
         }

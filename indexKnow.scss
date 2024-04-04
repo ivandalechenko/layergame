@@ -1,0 +1,92 @@
+.indexKnow {
+    margin-top: 300px;
+
+    &_header {
+        font-size: 75px;
+        font-weight: 700;
+    }
+
+    &_element {
+        padding: 25px;
+        border-radius: 25px;
+        background-color: #12111C;
+        overflow: hidden;
+        position: relative;
+        z-index: 2;
+
+        &_header {
+            font-size: 25px;
+            font-weight: 600;
+            color: #6C95F4;
+            text-transform: uppercase;
+            position: relative;
+            z-index: 1;
+        }
+
+        &_p {
+            margin-top: 40px;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 40px;
+            position: relative;
+            max-width: 410px;
+            z-index: 1;
+        }
+
+        &_num {
+            margin-top: 48px;
+            font-weight: 500;
+            font-size: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        &_decor {
+            position: relative;
+            z-index: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            .free_img {
+                width: 100%;
+                align-items: end;
+                top: 25px;
+            }
+
+            img {
+                width: calc(100% + 50px);
+            }
+        }
+
+        &_wrapper {
+            margin-top: 100px;
+            padding: 2px;
+            background: linear-gradient(120deg, #30BBEE, #C659FC);
+            border-radius: 25px;
+            width: 100%;
+            max-width: 650px;
+            display: flex;
+            align-items: center;
+
+            &_line1 {
+                top: -230px;
+                left: -160px;
+            }
+
+            &_line2 {
+                top: 340px;
+                left: -80px;
+            }
+        }
+    }
+
+    &_first {
+        margin-left: 80px;
+    }
+
+    &_sec {
+        margin-left: 260px;
+    }
+
+}

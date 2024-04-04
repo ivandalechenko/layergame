@@ -1,0 +1,19 @@
+.indexPartners {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 300px;
+    gap: 130px;
+    align-items: center;
+
+    &_header {
+        font-size: 75px;
+        font-weight: 700;
+
+        &_wrapper {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+}

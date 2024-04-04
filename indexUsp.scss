@@ -1,0 +1,32 @@
+.indexUsp {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+
+    &_header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    &_p {
+        margin-top: 10px;
+        font-size: 36px;
+        font-weight: 500;
+    }
+
+    &_decor {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        z-index: -1;
+
+        .free_img {
+            top: 180px
+        }
+    }
+}
