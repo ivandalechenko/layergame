@@ -17,12 +17,13 @@
     .container {
         display: flex;
         justify-content: space-between;
-        align-items: baseline;
+        align-items: center;
         height: 0px;
-        padding-top: 20px;
+        padding-top: 60px;
 
         @media(max-width: 550px) {
-            height: 100px;
+            height: 0px;
+            padding-top: 40px;
         }
     }
 
