@@ -1,6 +1,10 @@
 .indexKnow {
     margin-top: 600px;
 
+    @media(max-width: 900px) {
+        margin-top: 200px;
+    }
+
     @media(max-width: 950px) {
         display: flex;
         flex-wrap: wrap;
@@ -11,6 +15,10 @@
         width: 100%;
         display: flex;
         justify-content: right;
+
+        @media(max-width: 900px) {
+            display: none;
+        }
 
         .free_img {
             align-items: baseline;
@@ -25,6 +33,10 @@
     &_decorBluePlanet {
         width: 100%;
         display: flex;
+
+        @media(max-width: 900px) {
+            display: none;
+        }
 
         .free_img {
             align-items: baseline;

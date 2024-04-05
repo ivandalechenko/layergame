@@ -1,6 +1,10 @@
 .indexRoadmap {
     margin-top: 500px;
 
+    @media(max-width: 900px) {
+        margin-top: 200px;
+    }
+
     &_explore {
         display: block;
         font-size: 40px;

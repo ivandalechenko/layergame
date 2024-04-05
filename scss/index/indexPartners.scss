@@ -6,6 +6,10 @@
     gap: 130px;
     align-items: center;
 
+    @media(max-width: 900px) {
+        margin-top: 200px;
+    }
+
     @media(max-width: 1000px) {
         gap: 10%;
         row-gap: 30px;

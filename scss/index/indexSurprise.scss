@@ -4,6 +4,10 @@
     justify-content: center;
     flex-wrap: wrap;
 
+    @media(max-width: 900px) {
+        margin-top: 200px;
+    }
+
     &_header {
         font-weight: 600;
         font-size: 72px;

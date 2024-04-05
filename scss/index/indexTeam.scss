@@ -1,6 +1,10 @@
 .indexTeam {
     margin-top: 300px;
 
+    @media(max-width: 900px) {
+        margin-top: 200px;
+    }
+
     &_wrapper {
         background-color: black;
         background-image: url('/img/general/decor/stars.svg');
