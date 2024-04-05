@@ -20,6 +20,22 @@
     background-image: url('/img/general/decor/stars.svg');
 }
 
+#uspRedPlanet:hover {
+    filter: drop-shadow(0px 0px 50px #C659FC);
+    opacity: 1;
+    cursor: pointer;
+}
+
+#uspBluePlanet,
+#uspRedPlanet {
+    transition: 200ms opacity, 200ms filter;
+}
+
+#uspBluePlanet:hover {
+    filter: drop-shadow(0px 0px 50px #30BBEE);
+    opacity: 1;
+    cursor: pointer;
+}
 
 
 // Ниже везде

@@ -50,6 +50,8 @@
             width: 100%;
             display: flex;
             justify-content: right;
+            position: relative;
+            z-index: -1;
 
             .free_img {
                 justify-content: right;
@@ -61,6 +63,8 @@
             width: 100%;
             display: flex;
             justify-content: left;
+            position: relative;
+            z-index: -1;
 
             .free_img {
                 justify-content: left;

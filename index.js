@@ -17,6 +17,14 @@ menu(gsap);
 
 setTimeout(() => {
     let mm = gsap.matchMedia();
+
+    gsap.to('.indexUsp_header', {
+        opacity: 1,
+        duration: 2,
+        delay: 1,
+    })
+
+    gsap.to('.indexUsp_p', { duration: 2, text: { value: "Blurring the lines between Web2 and Web3" } })
     mm.add("(min-width: 900px)", () => {
         teamList(ScrollTrigger, gsap)
         uspAnim(gsap)

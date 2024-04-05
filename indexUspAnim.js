@@ -10,13 +10,6 @@ const uspAnim = (gsap) => {
             end: "50% top"
         }
     })
-    gsap.to('.indexUsp_header', {
-        opacity: 1,
-        duration: 2,
-        delay: 1,
-    })
-
-    gsap.to('.indexUsp_p', { duration: 2, text: { value: "Blurring the lines between Web2 and Web3" } })
 }
 
 export default uspAnim
