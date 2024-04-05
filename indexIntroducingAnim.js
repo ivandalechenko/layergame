@@ -17,7 +17,7 @@ const indexIntroducing = (gsap) => {
         opacity: 1,
         ease: "none",
         repeat: -1,
-        duration: 20,
+        duration: 10,
         motionPath: {
             path: '#comet1Path',
             align: '#comet1Path',
@@ -28,7 +28,7 @@ const indexIntroducing = (gsap) => {
     gsap.to(".comet2", {
         ease: "none",
         repeat: -1,
-        duration: 8,
+        duration: 5,
         motionPath: {
             path: '#comet2Path',
             align: '#comet2Path',
@@ -39,7 +39,7 @@ const indexIntroducing = (gsap) => {
     gsap.to(".comet4", {
         ease: "none",
         repeat: -1,
-        duration: 32,
+        duration: 8,
         motionPath: {
             path: '#comet4Path',
             align: '#comet4Path',
@@ -50,7 +50,7 @@ const indexIntroducing = (gsap) => {
     gsap.to(".comet3", {
         ease: "none",
         repeat: -1,
-        duration: 11,
+        duration: 7,
         motionPath: {
             path: '#comet3Path',
             align: '#comet3Path',

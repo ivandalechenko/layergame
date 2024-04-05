@@ -1,5 +1,5 @@
 .indexRoadmap {
-    margin-top: 300px;
+    margin-top: 500px;
 
     &_explore {
         display: block;
@@ -36,7 +36,7 @@
     }
 
     &_explore:hover {
-        transform: rotate(3deg) scale(1.1);
+        transform: scale(1.1);
     }
 
     &_planetBlue {

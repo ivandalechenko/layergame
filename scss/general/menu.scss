@@ -68,7 +68,7 @@
 
     &_link:hover {
         cursor: pointer;
-        transform: rotate(3deg) scale(1.1);
+        transform: scale(1.1);
     }
 
     &_inner {
@@ -138,7 +138,7 @@
         }
 
         &_link:hover {
-            transform: rotate(3deg) scale(1.1)
+            transform: scale(1.1)
         }
     }
 }

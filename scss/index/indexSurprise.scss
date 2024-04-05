@@ -6,7 +6,7 @@
 
     &_header {
         font-weight: 600;
-        font-size: 96px;
+        font-size: 72px;
 
         @media(max-width: 1000px) {
             font-size: 64px;
@@ -38,7 +38,7 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        column-gap: 50px;
+        column-gap: 100px;
         margin-top: 185px;
         row-gap: 150px;
 
@@ -49,8 +49,8 @@
 
     &_element {
         border-radius: 25px;
-        width: 470px;
-        max-width: calc(100vh - 30px);
+        width: 430px;
+        max-width: calc(100vw - 30px);
         height: 675px;
         background-color: #12111C;
         display: flex;
@@ -108,7 +108,11 @@
             }
 
             img {
-                width: calc(100vw - 30px);
+                max-width: 430px;
+
+                @media(max-width: 550px) {
+                    max-width: 300px;
+                }
             }
         }
 

@@ -7,7 +7,7 @@ const indexGetting = (gsap) => {
         y: 0,
         scrollTrigger: {
             trigger: '#indexKnow_element_1',
-            // markers: true,
+            markers: true,
             scrub: 1,
             start: '-200 60%',
             end: '0 60%',

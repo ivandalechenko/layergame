@@ -9,8 +9,8 @@ const indexRoadmap = (gsap) => {
             trigger: '#indexRoadmap_element1',
             scrub: 1,
             // markers: true,
-            start: 'top 60%',
-            end: '100% 60%',
+            start: 'top 50%',
+            end: '30% 50%',
         }
     })
     gsap.fromTo('#indexRoadmap_element2', {
@@ -23,8 +23,8 @@ const indexRoadmap = (gsap) => {
             trigger: '#indexRoadmap_element2',
             scrub: 1,
             // markers: true,
-            start: 'top 60%',
-            end: '100% 60%',
+            start: 'top 50%',
+            end: '30% 50%',
         }
     })
     gsap.fromTo('#indexRoadmap_element3', {
@@ -37,18 +37,18 @@ const indexRoadmap = (gsap) => {
             trigger: '#indexRoadmap_element3',
             scrub: 1,
             // markers: true,
-            start: 'top 60%',
-            end: '100% 60%',
+            start: 'top 50%',
+            end: '30% 50%',
         }
     })
     gsap.to('#indexRoadmap_planetBlue', {
-        y: -300,
+        y: 300,
         scrollTrigger: {
             trigger: '#indexRoadmap_planetBlue',
             scrub: 1,
             // markers: true,
-            start: '-200 60%',
-            end: '800 60%',
+            start: '-500 60%',
+            end: '1200 60%',
         }
     })
     gsap.to('#indexRoadmap_planetRed', {
