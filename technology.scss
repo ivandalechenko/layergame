@@ -1,17 +1,17 @@
-@import 'fonts';
-@import 'null';
-@import 'header';
-@import 'navMob';
-@import 'footer';
+@import 'scss/general/fonts';
+@import 'scss/general/null';
+@import 'scss/general/header';
+@import 'scss/general/navMob';
+@import 'scss/general/footer';
 // Выше везде
-@import 'ourMissionFaq';
-@import 'technologyUsp';
-@import 'technologyMultiplanet';
-@import 'technologyTokenInfo';
+@import 'scss/ourMission/ourMissionFaq';
+@import 'scss/technology/technologyUsp';
+@import 'scss/technology/technologyMultiplanet';
+@import 'scss/technology/technologyTokenInfo';
 
 
 // Ниже везде
-@import 'general';
+@import 'scss/general/general';
 
 
 .app {

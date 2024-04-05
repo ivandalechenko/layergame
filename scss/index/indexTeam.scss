@@ -13,11 +13,17 @@
 
     &_elements {
         width: fit-content;
-        // background-color: #fff1;
         display: flex;
 
-        column-gap: 50px;
+        // background-color: #fff1;
         // column-gap: 0px;
+        @media(max-width: 900px) {
+            width: 100%;
+            flex-wrap: wrap;
+            row-gap: 40px;
+        }
+
+        column-gap: 50px;
     }
 
     &_element {
@@ -26,31 +32,61 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: 40px;
-            gap: 0px;
+
+            @media(max-width: 550px) {
+                margin-top: 8px;
+            }
         }
 
         &_skills {
             max-width: 480px;
             font-size: 24px;
             text-transform: capitalize;
+
+            @media(max-width: 900px) {
+                font-size: 18px;
+                max-width: 360px;
+            }
+
+            @media(max-width: 550px) {
+                font-size: 8px;
+                max-width: 200px;
+            }
         }
 
         &_name {
             font-size: 32px;
             font-weight: 500;
+
+            @media(max-width: 900px) {
+                font-size: 24px;
+            }
+
+            @media(max-width: 550px) {
+                font-size: 12px;
+            }
         }
 
         &_role {
             font-size: 24px;
             font-weight: 500;
             margin-top: 12px;
+
+            @media(max-width: 900px) {
+                font-size: 18px;
+            }
+
+            @media(max-width: 550px) {
+                font-size: 10px;
+                margin-top: 4px;
+            }
         }
     }
 
     &_card {
         // width: 1000px;
         width: 860px;
+        max-width: calc(100vw - 30px);
         background-color: black;
         border-radius: 25px;
         padding: 40px;
@@ -60,8 +96,26 @@
         align-items: center;
         align-content: space-between;
 
+        @media(max-width: 900px) {
+            padding: 24px;
+        }
+
+        @media(max-width: 550px) {
+            padding: 16px;
+        }
+
         &_header {
             width: 100%;
+        }
+
+        img {
+            @media(max-width: 900px) {
+                max-height: 240px;
+            }
+
+            @media(max-width: 550px) {
+                max-height: 180px;
+            }
         }
 
         &_media {

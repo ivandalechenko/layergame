@@ -22,10 +22,34 @@
         column-gap: 60px;
         align-items: center;
 
+        @media(max-width: 900px) {
+            flex-wrap: wrap;
+        }
+
+        &_mobHeader {
+            display: none;
+            width: 100%;
+
+            @media(max-width: 550px) {
+                display: block;
+                font-size: 32px;
+                font-weight: 500;
+            }
+        }
+
+
         &_subHeader {
             font-size: 40px;
             font-weight: 500;
             text-transform: uppercase;
+
+            @media(max-width: 1200px) {
+                font-size: 28px;
+            }
+
+            @media(max-width: 550px) {
+                display: none;
+            }
         }
 
         &_header {
@@ -33,26 +57,72 @@
             margin-top: 10px;
             font-size: 64px;
             font-weight: 700;
+
+            @media(max-width: 1200px) {
+                font-size: 40px;
+            }
+
+            @media(max-width: 550px) {
+                font-size: 24px;
+            }
+
         }
 
         &_p {
             font-size: 32px;
             font-weight: 500;
-            color: #8C8B92
+            color: #8C8B92;
+
+            @media(max-width: 1200px) {
+                font-size: 20px;
+            }
+
+            @media(max-width: 550px) {
+                font-size: 16px;
+                margin-top: 20px;
+            }
         }
 
         &_num,
         &_content {
-            width: 50%
+            width: 50%;
+
+            @media(max-width: 900px) {
+                width: 100%;
+            }
         }
 
         &_num {
             display: flex;
             justify-content: left;
+
+            @media(max-width: 900px) {
+                order: 1;
+                justify-content: center;
+            }
+
+            @media(max-width: 550px) {
+                img {
+                    width: 100%;
+                }
+
+                margin: -40px 0px;
+            }
+        }
+
+        &_content {
+            @media(max-width: 900px) {
+                order: 2;
+            }
+
         }
     }
 
     &_delimeter {
+        @media(max-width: 900px) {
+            display: none;
+        }
+
         &_wrapper {
             width: 100%;
             display: flex;
@@ -76,5 +146,9 @@
     .indexRoadmap_element_num {
         display: flex;
         justify-content: right;
+
+        @media(max-width: 900px) {
+            justify-content: center;
+        }
     }
 }

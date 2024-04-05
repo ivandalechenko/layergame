@@ -11,6 +11,46 @@
 
 <body>
     <div class="app">
+        <div class="menu" id="menu">
+            <div class="menu_inner_wrapper">
+                <div class="menu_inner">
+                    <div class="menu_inner_container container">
+                        <div class="menu_nav container">
+                            <a href="/technology.html" class="menu_nav_link" id="menuNavLinkTechnology">
+                                Technology
+                            </a>
+                            <a href="/ourMission.html" class="menu_nav_link" id="menuNavLinkOurMission">
+                                Our Mission
+                            </a>
+                        </div>
+                        <div class="menu_header_wrapper">
+                            <div class="menu_header gradientText" id="menuHeader">
+                                Build with LayerGame
+                            </div>
+                        </div>
+                        <div class="menu_subHeader" id="menuSubheader">
+                            Millions Of Possibilities, Do Not Think About Anything Superfluous Except The Game
+                        </div>
+                        <div class="menu_links" id="menuLinks">
+                            <a class="menu_link" id="menuTgLink" style='opacity: 0;'>
+                                Telegram
+                            </a>
+                            <a class="menu_link gradientText" id="menuDocAndDiscordLink">
+                                Docs
+                            </a>
+                            <a class="menu_link" id="menuTwitterLink" style='opacity: 0;'>
+                                Twitter
+                            </a>
+                        </div>
+                    </div>
+                    <div class="menu_inner_decor">
+                        <div class="free_img">
+                            <img src="/img/general/decor/menuDecor.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="navMob">
             <div class="navMob_element">
                 <img src="/img/mobMenu/home.svg" alt="">
@@ -47,17 +87,25 @@
         </div>
         <header class="header">
             <div class="container">
-                <div class="header_logo">
-                    <img src="/img/general/logo.svg" alt="">
-                    <div class="header_logo_text gradientText">
-                        layergame
-                    </div>
-                </div>
+                <a href="/index.html" class="header_logo">
+                    <img src="/img/general/headerLogo.svg" alt="">
+                </a>
                 <div class="header_link">
-                    <img src="/img/general/headerLink.svg" alt="">
+                    <img src="/img/general/headerLinkLaunch.svg" class="header_link_launch" alt="">
+                    <img src="/img/general/headerLinkMenu.svg" id="menuOpener" alt="">
                 </div>
             </div>
         </header>
+        <div class="indexUsp_decor_right">
+            <div class="free_img">
+                <img src="/img/index/usp/pinkLight.png" alt="">
+            </div>
+        </div>
+        <div class="indexUsp_decor_left">
+            <div class="free_img">
+                <img src="/img/index/usp/blueLight.png" alt="">
+            </div>
+        </div>
         <div class="indexUsp container">
             <div class="indexUsp_header">
                 <img src="/img/index/usp/header.svg" alt="">
@@ -66,8 +114,7 @@
                 Blurring the lines between Web2 and Web3
             </div>
             <div class="indexUsp_decor">
-                <div class="free_img">
-                    <img src="/img/index/usp/planetsAndOrbits.svg" alt="">
+                <div class="free_img" id="indexUspDecorContainer">
                 </div>
             </div>
         </div>
@@ -92,6 +139,9 @@
                 </div>
             </div>
             <div class="indexRoadmap_element">
+                <div class="indexRoadmap_element_mobHeader">
+                    LAYERGAME APP
+                </div>
                 <div class="indexRoadmap_element_num">
                     <img src="/img/index/roadmap/1.svg" alt="">
                 </div>
@@ -110,6 +160,9 @@
                 </div>
             </div>
             <div class="indexRoadmap_element">
+                <div class="indexRoadmap_element_mobHeader">
+                    LAYERGAME SDK
+                </div>
                 <div class="indexRoadmap_element_content">
                     <div class="indexRoadmap_element_subHeader">
                         LAYERGAME SDK
@@ -129,6 +182,9 @@
                 </div>
             </div>
             <div class="indexRoadmap_element">
+                <div class="indexRoadmap_element_mobHeader">
+                    LAYERGAME OWN GAMES
+                </div>
                 <div class="indexRoadmap_element_num">
                     <img src="/img/index/roadmap/3.svg" alt="">
                 </div>
@@ -178,6 +234,9 @@
                 <div class="free_img indexKnow_element_wrapper_line1">
                     <img src="/img/index/getting/line1.svg" alt="">
                 </div>
+                <div class="free_img indexKnow_element_wrapper_line1_mob">
+                    <img src="/img/index/getting/line1Mob.svg" alt="">
+                </div>
                 <div class="indexKnow_element">
                     <div class="indexKnow_element_header">
                         become a part of our community
@@ -196,6 +255,9 @@
                 </div>
                 <div class="free_img indexKnow_element_wrapper_line2">
                     <img src="/img/index/getting/line2.svg" alt="">
+                </div>
+                <div class="free_img indexKnow_element_wrapper_line2_mob">
+                    <img src="/img/index/getting/line2Mob.svg" alt="">
                 </div>
             </div>
             <div class="indexKnow_element_wrapper indexKnow_third">
@@ -410,7 +472,6 @@
 
             </div>
         </div>
-
         <div class="indexSurprise container">
             <div class="indexSurprise_header gradientText">
                 Surprise The Gaming World Today

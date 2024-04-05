@@ -1,174 +1,20 @@
-@import 'fonts';
-@import 'null';
-@import 'header';
-@import 'navMob';
-@import 'footer';
+@import 'scss/general/fonts';
+@import 'scss/general/null';
+@import 'scss/general/header';
+@import 'scss/general/navMob';
+@import 'scss/general/footer';
+@import 'scss/general/menu';
+
 // Выше везде
 
-@import 'indexUsp';
-@import 'indexIntroducing';
-@import 'indexRoadmap';
-@import 'indexKnow';
-@import 'indexPartners';
-@import 'indexTeam';
-
-.indexSurprise {
-    margin-top: 300px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    &_header {
-        font-weight: 600;
-        font-size: 96px;
-    }
-
-    &_subHeader {
-        width: 100%;
-        text-align: center;
-        margin-top: 20px;
-        font-weight: 500;
-        font-size: 40px;
-        color: #8C8B92;
-    }
-
-    &_elements {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 50px;
-        margin-top: 185px;
-    }
-
-    &_element {
-        border-radius: 25px;
-        width: 470px;
-        height: 675px;
-        background-color: #12111C;
-        display: flex;
-        align-content: space-between;
-        flex-wrap: wrap;
-
-        &_content {
-            width: 100%;
-            margin-top: 180px;
-            padding: 0px 32px;
-            position: relative;
-            z-index: 1;
-        }
-
-        &_header {
-            font-size: 60px;
-            font-weight: 600
-        }
-
-        &_text {
-            text-transform: capitalize;
-            font-size: 32px;
-            margin-top: 30px;
-            font-weight: 500;
-        }
-
-        &_decorLarge {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            position: relative;
-            z-index: 0;
-
-            .free_img {
-                align-items: end;
-            }
-        }
-
-        &_decorSmall {
-            position: relative;
-            z-index: 0;
-            width: 100%;
-            display: flex;
-
-            img {
-                transition: 500ms filter;
-            }
-        }
-    }
-
-    &_element:nth-child(1) {
-        .indexSurprise_element_header {
-            color: #29C1EE;
-        }
-
-        .indexSurprise_element_decorLarge {
-            justify-content: right;
-
-            .free_img {
-                justify-content: right;
-
-                img {
-                    border-radius: 25px;
-                }
-            }
-        }
-
-        .indexSurprise_element_decorSmall {
-            .free_img {
-                top: 100px;
-            }
-        }
-    }
-
-    &_element:nth-child(1):hover {
-        .indexSurprise_element_decorSmall {
-            img {
-                filter: drop-shadow(0px 0px 80px #14D1E8);
-            }
-        }
-    }
-
-    &_element:nth-child(2) {
-        .indexSurprise_element_header {
-            color: #798CF5;
-        }
-
-        .indexSurprise_element_decorSmall {
-            justify-content: right;
-            right: 70px;
-        }
-    }
-
-    &_element:nth-child(2):hover {
-        .indexSurprise_element_decorSmall {
-            img {
-                filter: drop-shadow(0px 0px 80px #798CF5);
-            }
-        }
-    }
-
-    &_element:nth-child(3) {
-        .indexSurprise_element_header {
-            color: #BD60FB;
-        }
-
-        .indexSurprise_element_decorSmall {
-            justify-content: right;
-            right: 100px;
-
-            .free_img {
-                align-items: end
-            }
-        }
-    }
-
-    &_element:nth-child(3):hover {
-        .indexSurprise_element_decorSmall {
-            img {
-                filter: drop-shadow(0px 0px 80px #BD60FB);
-            }
-        }
-    }
-}
-
+@import 'scss/index/indexUsp';
+@import 'scss/index/indexIntroducing';
+@import 'scss/index/indexRoadmap';
+@import 'scss/index/indexKnow';
+@import 'scss/index/indexPartners';
+@import 'scss/index/indexTeam';
+@import 'scss/index/indexSurprise';
 
 
 // Ниже везде
-@import 'general';
+@import 'scss/general/general';

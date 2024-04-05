@@ -1,4 +1,4 @@
-<svg width="1250" height="1237" viewBox="0 0 1250 1237" fill="none" xmlns="http://www.w3.org/2000/svg">
+document.getElementById('indexUspDecorContainer').innerHTML = `<svg width="1250" height="1237" viewBox="-40 -40 1390 1277" fill="none" xmlns="http://www.w3.org/2000/svg" style='transition: 2000ms opacity; opacity:0;' id='orbitsAndPlanetSVG'>
 <path d="M381.469 724.081C386.435 726.21 385.096 733.132 379.746 733.42C374.055 733.727 372.129 726.581 377.245 724.08C379.583 722.983 379.071 723.011 381.469 724.081Z" fill="url(#paint0_linear_182_2970)" fill-opacity="0.3"/>
 <path d="M834.541 494.302C833.278 499.556 839.627 502.621 843.057 498.505C846.705 494.127 842.13 488.31 837.065 490.916C834.789 492.134 835.117 491.74 834.541 494.302Z" fill="url(#paint1_linear_182_2970)" fill-opacity="0.3"/>
 <path d="M331.467 453.127C331.919 454.382 332.131 456.951 331.919 458.834C330.357 472.006 312.559 474.596 307.232 462.417C303.678 454.324 308.903 445.37 317.689 444.428C323.695 443.801 329.358 447.391 331.467 453.127Z" fill="url(#paint2_linear_182_2970)" fill-opacity="0.3"/>
@@ -261,3 +261,4 @@
 </linearGradient>
 </defs>
 </svg>
+`

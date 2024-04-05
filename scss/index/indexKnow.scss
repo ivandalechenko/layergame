@@ -1,9 +1,19 @@
 .indexKnow {
     margin-top: 300px;
 
+    @media(max-width: 950px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     &_header {
         font-size: 75px;
         font-weight: 700;
+
+        @media(max-width: 750px) {
+            font-size: 32px;
+        }
     }
 
     &_element {
@@ -14,6 +24,10 @@
         position: relative;
         z-index: 2;
 
+        @media(max-width: 550px) {
+            padding: 16px;
+        }
+
         &_header {
             font-size: 25px;
             font-weight: 600;
@@ -21,6 +35,10 @@
             text-transform: uppercase;
             position: relative;
             z-index: 1;
+
+            @media(max-width: 550px) {
+                font-size: 16px;
+            }
         }
 
         &_p {
@@ -31,6 +49,10 @@
             position: relative;
             max-width: 410px;
             z-index: 1;
+
+            @media(max-width: 550px) {
+                font-size: 25px;
+            }
         }
 
         &_num {
@@ -39,6 +61,10 @@
             font-size: 20px;
             position: relative;
             z-index: 1;
+
+            @media(max-width: 550px) {
+                font-size: 16px;
+            }
         }
 
         &_decor {
@@ -61,6 +87,16 @@
 
         &_wrapper {
             margin-top: 100px;
+
+            @media(max-width: 750px) {
+                margin-top: 90px;
+            }
+
+            @media(max-width: 950px) {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
             padding: 2px;
             background: linear-gradient(120deg, #30BBEE, #C659FC);
             border-radius: 25px;
@@ -72,21 +108,65 @@
             &_line1 {
                 top: -230px;
                 left: -160px;
+
+                @media(max-width: 950px) {
+                    display: none;
+                }
+
+                &_mob {
+                    display: none;
+
+                    @media(max-width: 950px) {
+                        top: -45px;
+                        display: flex;
+                        width: 100%;
+
+                        img {
+                            width: 80%;
+                        }
+                    }
+                }
             }
 
             &_line2 {
                 top: 340px;
                 left: -80px;
+
+                @media(max-width: 950px) {
+                    display: none;
+                }
+
+                &_mob {
+                    display: none;
+
+                    @media(max-width: 950px) {
+                        top: 45px;
+                        display: flex;
+                        width: 100%;
+
+                        img {
+                            width: 80%;
+                        }
+                    }
+                }
             }
         }
     }
 
     &_first {
         margin-left: 80px;
+
+        @media(max-width: 950px) {
+            margin-left: 0px;
+        }
     }
 
     &_sec {
         margin-left: 260px;
+
+        @media(max-width: 950px) {
+            margin-left: 0px;
+        }
     }
 
 }

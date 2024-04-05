@@ -6,14 +6,27 @@
     gap: 130px;
     align-items: center;
 
+    @media(max-width: 1000px) {
+        gap: 10%;
+        row-gap: 30px;
+    }
+
     &_header {
         font-size: 75px;
         font-weight: 700;
+
+        @media(max-width: 550px) {
+            font-size: 32px;
+        }
 
         &_wrapper {
             display: flex;
             justify-content: center;
             width: 100%;
         }
+    }
+
+    img {
+        max-width: 45%;
     }
 }
