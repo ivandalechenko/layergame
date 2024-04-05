@@ -17,6 +17,11 @@ const teamList = (ScrollTrigger, gsap) => {
         ease: "none",
     });
 
+    const filler = gsap.to('.indexTeam_header_filler', {
+        width: "100%",
+        ease: 'none'
+    })
+
 
     ScrollTrigger.create({
         trigger: ".indexTeam",
@@ -26,8 +31,19 @@ const teamList = (ScrollTrigger, gsap) => {
         animation: tween,
         scrub: 1,
         invalidateOnRefresh: true,
-        markers: true
+        // markers: true
     })
+    ScrollTrigger.create({
+        trigger: ".indexTeam",
+        start: "top 20%",
+        end: () => `+=${(getScrollAmount() * -1)}`,
+        animation: filler,
+        scrub: 1,
+        // markers: true
+    })
+
+
+
 }
 
 export default teamList

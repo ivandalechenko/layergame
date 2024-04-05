@@ -1,0 +1,46 @@
+.indexCometPath_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .free_img {
+        align-items: baseline;
+    }
+
+    svg {
+        min-width: 200vw;
+        min-height: 100vh;
+    }
+
+    &_2 {
+        top: 100px;
+    }
+
+    &_3 {
+        top: -70px;
+    }
+
+    &_4 {
+        top: 190px;
+    }
+}
+
+.comet1 {
+    position: absolute;
+    left: -100vw;
+}
+
+.comet2 {
+    position: absolute;
+    left: -100vw;
+}
+
+.comet3 {
+    position: absolute;
+    left: -100vw;
+}
+
+.comet4 {
+    position: absolute;
+    left: -100vw;
+}

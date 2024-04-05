@@ -5,12 +5,101 @@
         display: block;
         font-size: 40px;
         font-weight: 600;
+        width: 100%;
+        text-align: center;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 200ms transform;
+
+        &_decorTop,
+        &_decorBot {
+            width: 100%;
+            max-width: 900px;
+            padding: 0px 30px;
+            display: flex;
+        }
+
+        &_decorTop {
+            justify-content: right;
+        }
 
         &_wrapper {
             margin-top: 60px;
             display: flex;
             width: 100%;
+            flex-wrap: wrap;
             justify-content: center;
+            align-content: space-between;
+        }
+    }
+
+    &_explore:hover {
+        transform: rotate(3deg) scale(1.1);
+    }
+
+    &_planetBlue {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .free_img {
+            justify-content: right;
+            align-items: baseline;
+            top: -200px;
+            left: -200px;
+
+            @media(max-width: 1300px) {
+                top: 100px;
+                left: 0px;
+            }
+
+            @media(max-width: 900px) {
+                left: 0px;
+                top: -100px;
+            }
+
+
+            img {
+                filter: brightness(0.6);
+
+                @media(max-width: 900px) {
+                    width: 500px;
+                }
+
+            }
+        }
+    }
+
+    &_planetRed {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .free_img {
+            justify-content: left;
+            align-items: baseline;
+            left: -700px;
+            top: -900px;
+
+            @media(max-width: 1300px) {
+                left: -1000px;
+                top: -900px;
+            }
+
+            @media(max-width: 900px) {
+                // display: none;
+                left: -1200px;
+                top: -400px;
+            }
+
+
+            img {
+                filter: brightness(0.6);
+
+
+            }
         }
     }
 
@@ -21,6 +110,8 @@
         width: 100%;
         column-gap: 60px;
         align-items: center;
+        position: relative;
+        z-index: 1;
 
         @media(max-width: 900px) {
             flex-wrap: wrap;

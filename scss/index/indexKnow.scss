@@ -7,6 +7,35 @@
         justify-content: center;
     }
 
+    &_decorRedPlanet {
+        width: 100%;
+        display: flex;
+        justify-content: right;
+
+        .free_img {
+            align-items: baseline;
+        }
+
+        img {
+            width: 1300px;
+            filter: brightness(0.6);
+        }
+    }
+
+    &_decorBluePlanet {
+        width: 100%;
+        display: flex;
+
+        .free_img {
+            align-items: baseline;
+            top: 200px;
+        }
+
+        img {
+            width: 300px;
+        }
+    }
+
     &_header {
         font-size: 75px;
         font-weight: 700;

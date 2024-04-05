@@ -1,9 +1,22 @@
 .indexTeam {
     margin-top: 300px;
 
+    &_wrapper {
+        background-color: black;
+    }
+
     &_header {
         font-size: 48px;
         font-weight: 600;
+
+        &_filler {
+            width: 0px;
+            background: linear-gradient(120deg, #30BBEE, #C659FC);
+            height: 10px;
+            margin-bottom: -10px;
+            position: relative;
+            z-index: 2;
+        }
 
         &_wrapper {
             border-top: 10px solid #12111C;
