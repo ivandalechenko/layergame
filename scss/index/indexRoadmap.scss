@@ -6,6 +6,8 @@
     }
 
     &_explore {
+        position: relative;
+        z-index: 1;
         display: block;
         font-size: 40px;
         font-weight: 600;

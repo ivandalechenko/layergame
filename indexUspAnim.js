@@ -1,7 +1,9 @@
 const uspAnim = (gsap) => {
-    gsap.to(".indexUsp_wrapper", {
+    gsap.fromTo(".indexUsp_wrapper", {
+        opacity: 1,
+    }, {
         opacity: 0,
-        scale: 1.5,
+        // scale: 1.5,
         scrollTrigger: {
             trigger: '.indexUsp_wrapper',
             scrub: 1,

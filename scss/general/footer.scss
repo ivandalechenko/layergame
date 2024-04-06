@@ -12,6 +12,8 @@
 
     &_wrapper {
         margin-top: 250px;
+        position: relative;
+        z-index: 1;
 
         @media(max-width: 1000px) {
             margin-top: 150px;

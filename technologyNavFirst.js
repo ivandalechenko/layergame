@@ -1,21 +1,9 @@
 const navFirst = (gsap) => {
-    gsap.to('#navigator', {
-        y: document.getElementById('navigatorContent').getBoundingClientRect().height - 400 - (document.getElementById('navigatorContent').getBoundingClientRect().height * 0.1),
-        ease: 'none',
-        pin: true,
-
-        scrollTrigger: {
-            trigger: '#navigatorContent',
-            scrub: true,
-            start: '400px top',
-            end: '90% top'
-        }
-    })
     gsap.to('#navigatorMenu1', {
         scrollTrigger: {
             trigger: '#navigatorBlock1',
             scrub: 1,
-            start: '-10px top',
+            start: '-100px top',
             end: '95% top',
             toggleClass: { targets: "#navigatorMenu1", className: "technologyMultiplanet_navigator_element_active" }
         }
@@ -24,8 +12,9 @@ const navFirst = (gsap) => {
         scrollTrigger: {
             trigger: '#navigatorBlock2',
             scrub: 1,
-            start: '-10px top',
+            start: '-100px top',
             end: '95% top',
+            markers: true,
 
             toggleClass: { targets: "#navigatorMenu2", className: "technologyMultiplanet_navigator_element_active" }
         }
@@ -34,7 +23,7 @@ const navFirst = (gsap) => {
         scrollTrigger: {
             trigger: '#navigatorBlock3',
             scrub: 1,
-            start: '-10px top',
+            start: '-100px top',
             end: '95% top',
 
             toggleClass: { targets: "#navigatorMenu3", className: "technologyMultiplanet_navigator_element_active" }
@@ -44,16 +33,17 @@ const navFirst = (gsap) => {
         scrollTrigger: {
             trigger: '#navigatorBlock4',
             scrub: 1,
-            start: '-10px top',
+            start: '-100px top',
             end: '95% top',
             toggleClass: { targets: "#navigatorMenu4", className: "technologyMultiplanet_navigator_element_active" }
         }
     })
     gsap.to('#navFirstPlanet', {
-        y: 4000,
+        y: 6000,
+        ease: 'none',
         scrollTrigger: {
             trigger: '#navigatorContent',
-            scrub: 3,
+            scrub: 0,
             start: 'top top',
         }
     })
@@ -121,7 +111,7 @@ const navFirst = (gsap) => {
             pin: true,
             scrollTrigger: {
                 trigger: '#navigatorContent',
-                scrub: 1,
+                scrub: 0,
                 start: '400px top',
                 end: '100% top'
             }
