@@ -12,5 +12,28 @@
 @import 'scss/general/navMob';
 @import 'scss/general/menu';
 
+#uspRedPlanet:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#uspBluePlanet,
+#uspRedPlanet {
+    transition: 200ms opacity;
+}
+
+.uspPlanet1Decor {
+    transform-origin: 40%;
+    transition: 300ms transform;
+}
+
+#uspBluePlanet:hover {
+    opacity: 1;
+    cursor: pointer;
+
+    .uspPlanet1Decor {
+        transform: scale(1.05);
+    }
+}
 
 @import 'scss/general/general';

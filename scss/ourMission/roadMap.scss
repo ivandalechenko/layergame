@@ -68,13 +68,25 @@
 
       .free_img {
         justify-content: left;
-        top: -170px;
-        left: -500px;
+        top: 70px;
+        left: 6px;
 
         @media(max-width: 800px) {
-          top: -760px;
-          left: -300px;
+          top: -600px;
+          left: 300px;
         }
+
+        img {
+          filter: brightness(0.5);
+          transition: 300ms filter;
+        }
+      }
+    }
+
+    &_decorPlanet1:hover {
+      img {
+        cursor: pointer;
+        filter: brightness(1) drop-shadow(0px 0px 60px #30BBEE);
       }
     }
 
@@ -101,22 +113,32 @@
 
     &_decorPlanet3 {
       width: 100%;
-
+      display: flex;
+      justify-content: right;
       position: relative;
       z-index: 0;
 
       .free_img {
-        left: 750px;
-        top: 70px;
+        top: -330px;
 
         @media(max-width: 800px) {
-          left: -100px;
-          top: -120px;
+          left: 0px;
+          top: -250px;
 
-          img {
-            width: 3000px;
-          }
         }
+
+        img {
+          filter: brightness(0.5);
+          transition: 300ms filter;
+        }
+      }
+    }
+
+    &_decorPlanet3:hover {
+      cursor: pointer;
+
+      img {
+        filter: brightness(1) drop-shadow(0px 0px 60px #C659FC);
       }
     }
 

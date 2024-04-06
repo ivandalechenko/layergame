@@ -14,7 +14,7 @@ const navFirst = (gsap) => {
             scrub: 1,
             start: '-100px top',
             end: '95% top',
-            markers: true,
+            // markers: true,
 
             toggleClass: { targets: "#navigatorMenu2", className: "technologyMultiplanet_navigator_element_active" }
         }
@@ -44,7 +44,8 @@ const navFirst = (gsap) => {
         scrollTrigger: {
             trigger: '#navigatorContent',
             scrub: 0,
-            start: 'top top',
+            start: 'top bottom',
+            // markers: true
         }
     })
 
