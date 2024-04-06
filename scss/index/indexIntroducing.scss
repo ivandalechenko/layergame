@@ -4,6 +4,12 @@
     justify-content: center;
     flex-wrap: wrap;
 
+    @media(max-width: 550px) {
+        margin-top: 50px;
+    }
+
+    position: relative;
+
     &_subHeader {
         font-size: 55px;
         font-weight: 600;

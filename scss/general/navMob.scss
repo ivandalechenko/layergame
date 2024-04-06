@@ -10,6 +10,7 @@
     padding: 20px;
 
     &_element {
+        width: 25%;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -29,9 +30,15 @@
         }
     }
 
-    &_element:not(:nth-child(3)) {
+    &_element:not(:nth-child(4)) {
         img {
             filter: grayscale(1);
+        }
+    }
+
+    &_element:nth-child(4) {
+        img {
+            margin-bottom: -2px;
         }
     }
 

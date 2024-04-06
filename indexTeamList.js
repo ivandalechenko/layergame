@@ -3,9 +3,9 @@ const teamList = (ScrollTrigger, gsap) => {
     const races = document.querySelector(".indexTeam_elements");
     const containers = document.getElementsByClassName('container');
     const containerWidth = containers[0].getBoundingClientRect().width;
-    console.log(`Ширина всей хуйни что надо двигать ${races.scrollWidth}`)
-    console.log(`Ширина бади ${window.innerWidth}`);
-    console.log(getScrollAmount());
+    // console.log(`Ширина всей хуйни что надо двигать ${races.scrollWidth}`)
+    // console.log(`Ширина бади ${window.innerWidth}`);
+    // console.log(getScrollAmount());
     function getScrollAmount() {
         let racesWidth = races.scrollWidth;
         return (-(racesWidth - window.innerWidth + (window.innerWidth - containerWidth + 30)));
