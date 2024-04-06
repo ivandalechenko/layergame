@@ -3,10 +3,23 @@
     width: 100%;
     min-height: 100vh;
 
+    @media(max-width: 550px) {
+        padding-top: 20vh;
+    }
+
     &_header {
         font-size: 128px;
         font-weight: 600;
         max-width: 700px;
+
+        @media(max-width: 900px) {
+            font-size: 72px;
+        }
+
+        @media(max-width: 550px) {
+            font-size: 40px;
+            max-width: 335px;
+        }
     }
 
     &_addittional {
@@ -16,6 +29,11 @@
         color: #8C8B92;
         text-transform: capitalize;
 
+        @media(max-width: 550px) {
+            font-size: 16px;
+            max-width: 246px;
+        }
+
         &_link {
             display: flex;
             flex-wrap: wrap;
@@ -24,10 +42,18 @@
             margin-top: 30px;
             justify-content: center;
 
+            @media(max-width: 900px) {
+                width: 200px;
+            }
+
             &_text {
                 transition: 200ms transform;
                 font-weight: 600;
                 font-size: 28px;
+
+                @media(max-width: 550px) {
+                    font-size: 18px;
+                }
             }
 
             &_decorTop {
@@ -70,6 +96,11 @@
             width: 100%;
             display: flex;
             justify-content: right;
+
+            @media(max-width: 900px) {
+                justify-content: left;
+                margin-top: 30px;
+            }
         }
 
     }

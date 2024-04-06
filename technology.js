@@ -15,8 +15,11 @@ menu(gsap);
 
 setTimeout(() => {
 
-    navFirst(gsap);
-    navSecond(gsap);
+    let mm = gsap.matchMedia();
+    mm.add("(min-width: 900px)", () => {
+        navFirst(gsap);
+        navSecond(gsap);
+    });
 
 
 }, 500);
