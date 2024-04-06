@@ -11,6 +11,8 @@ import indexIntroducing from './indexIntroducingAnim.js'
 import indexRoadmap from './indexRoadmapAnim.js'
 import indexGetting from './indexGettingAnim.js'
 
+import './hideLoader.js'
+
 menu(gsap);
 
 

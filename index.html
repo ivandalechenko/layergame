@@ -6,6 +6,39 @@
     <link rel="icon" type="image/svg+xml" href="/img/general/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LayerGame - Our mission</title>
+    <style>
+        #loader {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            z-index: 999;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            align-content: center;
+
+        }
+
+        #loader_logo {
+            width: 140px;
+        }
+
+
+        #loader_wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+        }
+
+
+        #loader_wrapper img {
+            width: 90%;
+            max-width: 300px;
+        }
+    </style>
 
 </head>
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -24,6 +57,12 @@
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 <body>
+    <div id="loader">
+        <img src="/img/general/logo.svg" id="loader_logo" alt="">
+        <div id="loader_wrapper">
+            <img src="/img/general/loader.svg" alt="">
+        </div>
+    </div>
     <div class="app">
 
         <div class="indexStarHider">

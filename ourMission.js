@@ -8,6 +8,7 @@ document.getElementById('menuOpener').onclick = () => {
 }
 import menu from './menu'
 menu(gsap)
+import './hideLoader.js'
 
 
 setTimeout(() => {

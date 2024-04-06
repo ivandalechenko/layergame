@@ -6,6 +6,7 @@ import menu from './menu'
 import faqDds from './faqDds'
 import navFirst from './technologyNavFirst'
 import navSecond from './technologyNavSecond'
+import './hideLoader.js'
 
 
 

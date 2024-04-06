@@ -6,7 +6,39 @@
   <link rel="icon" type="image/svg+xml" href="/img/general/logo.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LayerGame - Our mission</title>
+  <style>
+    #loader {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      z-index: 999;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      align-content: center;
 
+    }
+
+    #loader_logo {
+      width: 140px;
+    }
+
+
+    #loader_wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+    }
+
+
+    #loader_wrapper img {
+      width: 90%;
+      max-width: 300px;
+    }
+  </style>
 </head>
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -24,6 +56,12 @@
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 <body id="body">
+  <div id="loader">
+    <img src="/img/general/logo.svg" id="loader_logo" alt="">
+    <div id="loader_wrapper">
+      <img src="/img/general/loader.svg" alt="">
+    </div>
+  </div>
   <!-- <body style="overflow: hidden;"> -->
   <div class="app">
     <div class="menu" id="menu">
@@ -227,6 +265,9 @@
           </div>
           <div class="roadMap_list_decorPlanet1">
             <div class="free_img">
+              <img src="/img/ourMission/decor/planet1Orbit.svg" alt="">
+            </div>
+            <div class="free_img planet">
               <img src="/img/ourMission/decor/planet1.png" alt="">
             </div>
           </div>
@@ -270,9 +311,13 @@
             </div>
           </div>
           <div class="roadMap_list_decorPlanet3">
-            <div class="free_img">
+            <div class="free_img orbit">
+              <img src="/img/ourMission/decor/planet3Orbit.svg" alt="">
+            </div>
+            <div class="free_img planet">
               <img src="/img/ourMission/decor/planet3m.png" alt="">
             </div>
+
           </div>
           <div class="roadMap_list_element" id="roadMap_list_element_q4">
             <div class="roadMap_list_element_content">

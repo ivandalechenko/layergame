@@ -30,7 +30,7 @@ const teamList = (ScrollTrigger, gsap) => {
             duration: 0.5,
             trigger: '.indexTeam',
             scrub: 1,
-            markers: true,
+            // markers: true,
             start: 'top 50%',
             end: 'top 50%',
         }
@@ -43,7 +43,7 @@ const teamList = (ScrollTrigger, gsap) => {
             trigger: '.indexTeam',
             scrub: 1,
             duration: 0.5,
-            markers: true,
+            // markers: true,
             start: '500 50%',
             end: '500 50%',
         }
