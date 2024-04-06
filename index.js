@@ -31,12 +31,12 @@ setTimeout(() => {
         indexIntroducing(gsap)
         indexRoadmap(gsap)
         indexGetting(gsap)
-
-
+        animOrbit(gsap)
     });
 
-
-    animOrbit(gsap)
+    mm.add("(max-width: 900px)", () => {
+        animOrbit(gsap, 2)
+    });
 
 
 

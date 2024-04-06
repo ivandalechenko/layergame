@@ -1,10 +1,10 @@
-const animOrbit = (gsap) => {
+const animOrbit = (gsap, orbitSpeed = 1) => {
 
     document.getElementById('orbitsAndPlanetSVG').style.opacity = 1;
     gsap.to("#indexUspPlanet1", {
         ease: "none",
         repeat: -1,
-        duration: 50,
+        duration: 50 / orbitSpeed,
         motionPath: {
             path: '#indexUspOrbit1',
             align: '#indexUspOrbit1',
@@ -16,7 +16,7 @@ const animOrbit = (gsap) => {
     gsap.to("#indexUspPlanet2", {
         ease: "none",
         repeat: -1,
-        duration: 120,
+        duration: 120 / orbitSpeed,
         motionPath: {
             path: '#indexUspOrbit2',
             align: '#indexUspOrbit2',
@@ -28,7 +28,7 @@ const animOrbit = (gsap) => {
     gsap.to("#indexUspPlanet3", {
         ease: "none",
         repeat: -1,
-        duration: 80,
+        duration: 80 / orbitSpeed,
         motionPath: {
             path: '#indexUspOrbit3',
             align: '#indexUspOrbit3',
