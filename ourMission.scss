@@ -27,6 +27,13 @@
     transition: 300ms transform;
 }
 
+#uspBluePlanet {
+
+    .uspPlanet1Decor {
+        transform-origin: 30% 90%;
+    }
+}
+
 #uspBluePlanet:hover {
     opacity: 1;
     cursor: pointer;

@@ -22,6 +22,34 @@ const teamList = (ScrollTrigger, gsap) => {
     })
 
 
+    gsap.fromTo('.indexStarHider', {
+        opacity: 0,
+    }, {
+        opacity: 1,
+        scrollTrigger: {
+            duration: 0.5,
+            trigger: '.indexTeam',
+            scrub: 1,
+            markers: true,
+            start: 'top 50%',
+            end: 'top 50%',
+        }
+    })
+    gsap.fromTo('.indexStarHider', {
+        opacity: 1,
+    }, {
+        opacity: 0,
+        scrollTrigger: {
+            trigger: '.indexTeam',
+            scrub: 1,
+            duration: 0.5,
+            markers: true,
+            start: '500 50%',
+            end: '500 50%',
+        }
+    })
+
+
     ScrollTrigger.create({
         trigger: ".indexTeam",
         start: "top 20%",

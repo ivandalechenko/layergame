@@ -77,7 +77,8 @@
         }
 
         img {
-          filter: brightness(0.5);
+          cursor: pointer;
+          filter: brightness(1) drop-shadow(0px 0px 60px #30BBEE);
           transition: 300ms filter;
         }
       }
@@ -86,7 +87,7 @@
     &_decorPlanet1:hover {
       img {
         cursor: pointer;
-        filter: brightness(1) drop-shadow(0px 0px 60px #30BBEE);
+        filter: brightness(0.5);
       }
     }
 
@@ -128,7 +129,7 @@
         }
 
         img {
-          filter: brightness(0.5);
+          filter: brightness(1) drop-shadow(0px 0px 60px #C659FC);
           transition: 300ms filter;
         }
       }
@@ -138,7 +139,7 @@
       cursor: pointer;
 
       img {
-        filter: brightness(1) drop-shadow(0px 0px 60px #C659FC);
+        filter: brightness(0.5);
       }
     }
 

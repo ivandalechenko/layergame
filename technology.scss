@@ -26,6 +26,10 @@
 .ourMissionFaq {
     margin-top: 200px;
 
+    &_wrapper {
+        background-color: black;
+    }
+
     @media(max-width: 550px) {
         margin-top: 100px;
     }

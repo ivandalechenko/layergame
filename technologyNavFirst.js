@@ -39,7 +39,7 @@ const navFirst = (gsap) => {
         }
     })
     gsap.to('#navFirstPlanet', {
-        y: 6000,
+        y: 6400,
         ease: 'none',
         scrollTrigger: {
             trigger: '#navigatorContent',
