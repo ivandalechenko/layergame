@@ -12,8 +12,10 @@
 
 // Ниже везде
 @import 'scss/general/general';
+@import 'scss/general/menu';
 
 
 .app {
     background-image: url('/img/general/decor/stars.svg');
+    background-attachment: fixed;
 }

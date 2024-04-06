@@ -9,8 +9,63 @@
 
 </head>
 
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!--                                                   -->
+<!--       ___    _____   _____      _      __  __     -->
+<!--      / _ \  |_   _| | ____|    / \    |  \/  |    -->
+<!--     | | | |   | |   |  _|     / _ \   | |\/| |    -->
+<!--     | |_| |   | |   | |___   / ___ \  | |  | |    -->
+<!--      \__\_\   |_|   |_____| /_/   \_\ |_|  |_|    -->
+<!--                                                   -->
+<!--             Partners of layergame                 -->
+<!--                URL: QTeam.dev                     -->
+<!--                                                   -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
 <body>
   <div class="app">
+    <div class="menu" id="menu">
+      <div class="menu_inner_wrapper">
+        <div class="menu_inner">
+          <div class="menu_inner_container container">
+            <div class="menu_nav container">
+              <a href="/technology.html" class="menu_nav_link" id="menuNavLinkTechnology">
+                Technology
+              </a>
+              <a href="/ourMission.html" class="menu_nav_link" id="menuNavLinkOurMission">
+                Our Mission
+              </a>
+            </div>
+            <div class="menu_header_wrapper">
+              <div class="menu_header gradientText" id="menuHeader">
+                Build with LayerGame
+              </div>
+            </div>
+            <div class="menu_subHeader" id="menuSubheader">
+              Millions Of Possibilities, Do Not Think About Anything Superfluous Except The Game
+            </div>
+            <div class="menu_links" id="menuLinks">
+              <a class="menu_link" id="menuTgLink" style='opacity: 0;'>
+                Telegram
+              </a>
+              <a class="menu_link gradientText" id="menuDocAndDiscordLink">
+                Docs
+              </a>
+              <a class="menu_link" id="menuTwitterLink" style='opacity: 0;'>
+                Twitter
+              </a>
+            </div>
+          </div>
+          <div class="menu_inner_decor">
+            <div class="free_img">
+              <img src="/img/general/decor/menuDecor.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="navMob">
       <div class="navMob_element">
         <img src="/img/mobMenu/home.svg" alt="">
@@ -47,14 +102,12 @@
     </div>
     <header class="header">
       <div class="container">
-        <div class="header_logo">
-          <img src="/img/general/logo.svg" alt="">
-          <div class="header_logo_text gradientText">
-            layergame
-          </div>
-        </div>
+        <a href="/index.html" class="header_logo">
+          <img src="/img/general/headerLogo.svg" alt="">
+        </a>
         <div class="header_link">
-          <img src="/img/general/headerLink.svg" alt="">
+          <img src="/img/general/headerLinkLaunch.svg" class="header_link_launch" alt="">
+          <img src="/img/general/headerLinkMenu.svg" id="menuOpener" alt="">
         </div>
       </div>
     </header>
@@ -71,7 +124,9 @@
                 <img src="/img/ourMission/decor/pinkTriangle.svg" alt="">
               </div>
             </div>
-            Start Building
+            <div class="technologyUsp_addittional_link_text">
+              Start Building
+            </div>
             <div class="technologyUsp_addittional_link_decorBot">
               <div class="free_img">
                 <img src="/img/ourMission/decor/blueTriangle.svg" alt="">
@@ -81,293 +136,301 @@
         </div>
       </div>
     </div>
-    <div class="technologyMultiplanet container">
-      <div class="technologyMultiplanet_navigator">
-        <img src="/img/technology/navigatorDecor.png" class="technologyMultiplanet_navigator_decor" alt="">
-        <div class="technologyMultiplanet_navigator_content" id="navigator">
-          <div class="technologyMultiplanet_navigator_header">
-            Navigation
-          </div>
-          <div class="technologyMultiplanet_navigator_list">
-            <a href="#navigatorBlock1" class="technologyMultiplanet_navigator_element " id="navigatorMenu1">
-              <img src="/img/technology/navigatorElementDecor.png" alt="">
-              <div class="technologyMultiplanet_navigator_element_text gradientText">
-                LayerGame store
-              </div>
-            </a>
-            <a href="#navigatorBlock2" class="technologyMultiplanet_navigator_element" id="navigatorMenu2">
-              <img src="/img/technology/navigatorElementDecor.png" alt="">
-              <div class="technologyMultiplanet_navigator_element_text gradientText">
-                LayerGame SDK
-              </div>
-            </a>
-            <a href="#navigatorBlock3" class="technologyMultiplanet_navigator_element" id="navigatorMenu3">
-              <img src="/img/technology/navigatorElementDecor.png" alt="">
-              <div class="technologyMultiplanet_navigator_element_text gradientText">
-                SDK features
-              </div>
-            </a>
-            <a href="#navigatorBlock4" class="technologyMultiplanet_navigator_element" id="navigatorMenu4">
-              <img src="/img/technology/navigatorElementDecor.png" alt="">
-              <div class="technologyMultiplanet_navigator_element_text gradientText">
-                Built From SDK
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="technologyMultiplanet_delimeter">
-      </div>
-      <div class="technologyMultiplanet_content" id="navigatorContent">
-        <div class="technologyMultiplanet_content_decor">
-          <div class="free_img">
-            <img src="/img/technology/planet1.png" alt="">
+    <div class="technologyMultiplanet_wrapper">
+      <div class="technologyMultiplanet container">
+        <div class="technologyMultiplanet_navigator">
+          <img src="/img/technology/navigatorDecor.png" class="technologyMultiplanet_navigator_decor" alt="">
+          <div class="technologyMultiplanet_navigator_content" id="navigator">
+            <div class="technologyMultiplanet_navigator_header">
+              Navigation
+            </div>
+            <div class="technologyMultiplanet_navigator_list">
+              <a href="#navigatorBlock1" class="technologyMultiplanet_navigator_element " id="navigatorMenu1">
+                <img src="/img/technology/navigatorElementDecor.png" alt="">
+                <div class="technologyMultiplanet_navigator_element_text gradientText">
+                  LayerGame store
+                </div>
+              </a>
+              <a href="#navigatorBlock2" class="technologyMultiplanet_navigator_element" id="navigatorMenu2">
+                <img src="/img/technology/navigatorElementDecor.png" alt="">
+                <div class="technologyMultiplanet_navigator_element_text gradientText">
+                  LayerGame SDK
+                </div>
+              </a>
+              <a href="#navigatorBlock3" class="technologyMultiplanet_navigator_element" id="navigatorMenu3">
+                <img src="/img/technology/navigatorElementDecor.png" alt="">
+                <div class="technologyMultiplanet_navigator_element_text gradientText">
+                  SDK features
+                </div>
+              </a>
+              <a href="#navigatorBlock4" class="technologyMultiplanet_navigator_element" id="navigatorMenu4">
+                <img src="/img/technology/navigatorElementDecor.png" alt="">
+                <div class="technologyMultiplanet_navigator_element_text gradientText">
+                  Built From SDK
+                </div>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="technologyMultiplanet_content_element" id="navigatorBlock1">
-          <div class="technologyMultiplanet_content_largeHeader gradientText">
-            multiplanet game store
+        <div class="technologyMultiplanet_delimeter">
+        </div>
+        <div class="technologyMultiplanet_content" id="navigatorContent">
+          <div class="technologyMultiplanet_content_decor">
+            <div class="free_img" id="navFirstPlanet">
+              <img src="/img/technology/planet1.png" alt="">
+            </div>
           </div>
-          <div class="technologyMultiplanet_content_p">
-            A completely new solution that blurs the boundaries between web2 and web3 worlds. The perfect introduction
-            to web3 for gamers who have never heard of it
-          </div>
-          <div class="technologyMultiplanet_content_buttons">
-            <button class="technologyMultiplanet_content_buttons_soon">
-              COMING SOON
-            </button>
-            <div class="technologyMultiplanet_content_buttons_discuss_wrapper">
-              <button class="technologyMultiplanet_content_buttons_discuss">
-                Let's Discuss
+          <div class="technologyMultiplanet_content_element" id="navigatorBlock1">
+            <div class="technologyMultiplanet_content_largeHeader gradientText">
+              multiplanet game store
+            </div>
+            <div class="technologyMultiplanet_content_p">
+              A completely new solution that blurs the boundaries between web2 and web3 worlds. The perfect introduction
+              to web3 for gamers who have never heard of it
+            </div>
+            <div class="technologyMultiplanet_content_buttons">
+              <button class="technologyMultiplanet_content_buttons_soon">
+                COMING SOON
               </button>
-            </div>
-          </div>
-          <div class="technologyMultiplanet_content_advantage">
-            <div class="technologyMultiplanet_content_advantage_delimeter">
-            </div>
-            <div class="technologyMultiplanet_content_advantage_content">
-              <div class="technologyMultiplanet_content_advantage_header">
-                User friendly
-              </div>
-              <div class="technologyMultiplanet_content_advantage_text">
-                Our application will be as easy to use as possible, even for those who have never used blockchain and
-                cryptocurrency. And the registration process will take a couple of minutes
+              <div class="technologyMultiplanet_content_buttons_discuss_wrapper">
+                <button class="technologyMultiplanet_content_buttons_discuss">
+                  Let's Discuss
+                </button>
               </div>
             </div>
-          </div>
-          <div class="technologyMultiplanet_content_advantage">
-            <div class="technologyMultiplanet_content_advantage_delimeter">
-            </div>
-            <div class="technologyMultiplanet_content_advantage_content">
-              <div class="technologyMultiplanet_content_advantage_header">
-                Simple to Play
+            <div class="technologyMultiplanet_content_advantage">
+              <div class="technologyMultiplanet_content_advantage_delimeter">
               </div>
-              <div class="technologyMultiplanet_content_advantage_text">
-                We provide high-quality interface interaction, in order to buy and install the game you only need a
-                couple of clicks. But if you need a more flexible setup, we will meet your needs as well.
-              </div>
-            </div>
-          </div>
-          <div class="technologyMultiplanet_content_advantage">
-            <div class="technologyMultiplanet_content_advantage_delimeter">
-            </div>
-            <div class="technologyMultiplanet_content_advantage_content">
-              <div class="technologyMultiplanet_content_advantage_header">
-                Easy to participate
-              </div>
-              <div class="technologyMultiplanet_content_advantage_text">
-                We are open to cooperation from completely different developers. We do not specialize in a specific
-                genre and are ready to help and support new games in our game store
+              <div class="technologyMultiplanet_content_advantage_content">
+                <div class="technologyMultiplanet_content_advantage_header">
+                  User friendly
+                </div>
+                <div class="technologyMultiplanet_content_advantage_text">
+                  Our application will be as easy to use as possible, even for those who have never used blockchain and
+                  cryptocurrency. And the registration process will take a couple of minutes
+                </div>
               </div>
             </div>
+            <div class="technologyMultiplanet_content_advantage">
+              <div class="technologyMultiplanet_content_advantage_delimeter">
+              </div>
+              <div class="technologyMultiplanet_content_advantage_content">
+                <div class="technologyMultiplanet_content_advantage_header">
+                  Simple to Play
+                </div>
+                <div class="technologyMultiplanet_content_advantage_text">
+                  We provide high-quality interface interaction, in order to buy and install the game you only need a
+                  couple of clicks. But if you need a more flexible setup, we will meet your needs as well.
+                </div>
+              </div>
+            </div>
+            <div class="technologyMultiplanet_content_advantage">
+              <div class="technologyMultiplanet_content_advantage_delimeter">
+              </div>
+              <div class="technologyMultiplanet_content_advantage_content">
+                <div class="technologyMultiplanet_content_advantage_header">
+                  Easy to participate
+                </div>
+                <div class="technologyMultiplanet_content_advantage_text">
+                  We are open to cooperation from completely different developers. We do not specialize in a specific
+                  genre and are ready to help and support new games in our game store
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="technologyMultiplanet_content_element" id="navigatorBlock2">
-          <div class="technologyMultiplanet_content_largeHeader gradientText">
-            LAYERGAME MULTIPLATFORM SDK
-          </div>
-          <div class="technologyMultiplanet_content_p">
-            A ready-made solution for developers who were not familiar with web3 or just want to focus on developing the
-            game itself, rather than complex mechanics
-          </div>
-          <div class="technologyMultiplanet_content_buttons">
-            <button class="technologyMultiplanet_content_buttons_soon">
-              COMING SOON
-            </button>
-            <div class="technologyMultiplanet_content_buttons_discuss_wrapper">
-              <button class="technologyMultiplanet_content_buttons_discuss">
-                Let's Discuss
+          <div class="technologyMultiplanet_content_element" id="navigatorBlock2">
+            <div class="technologyMultiplanet_content_largeHeader gradientText">
+              LAYERGAME MULTIPLATFORM SDK
+            </div>
+            <div class="technologyMultiplanet_content_p">
+              A ready-made solution for developers who were not familiar with web3 or just want to focus on developing
+              the
+              game itself, rather than complex mechanics
+            </div>
+            <div class="technologyMultiplanet_content_buttons">
+              <button class="technologyMultiplanet_content_buttons_soon">
+                COMING SOON
               </button>
-            </div>
-          </div>
-          <div class="technologyMultiplanet_content_advantage">
-            <div class="technologyMultiplanet_content_advantage_delimeter">
-            </div>
-            <div class="technologyMultiplanet_content_advantage_content">
-              <div class="technologyMultiplanet_content_advantage_header">
-                web3 integration
-              </div>
-              <div class="technologyMultiplanet_content_advantage_text">
-                connect any EVM blockchain to your game and enjoy the possibilities of the web3 world
+              <div class="technologyMultiplanet_content_buttons_discuss_wrapper">
+                <button class="technologyMultiplanet_content_buttons_discuss">
+                  Let's Discuss
+                </button>
               </div>
             </div>
-          </div>
-          <div class="technologyMultiplanet_content_advantage">
-            <div class="technologyMultiplanet_content_advantage_delimeter">
-            </div>
-            <div class="technologyMultiplanet_content_advantage_content">
-              <div class="technologyMultiplanet_content_advantage_header">
-                Complete backend
+            <div class="technologyMultiplanet_content_advantage">
+              <div class="technologyMultiplanet_content_advantage_delimeter">
               </div>
-              <div class="technologyMultiplanet_content_advantage_text">
-                you no longer need months of heavy backend development and Microsoft Azure and Microsoft Playfab cloud
-                computing will provide you with more convenience than you think
-              </div>
-            </div>
-          </div>
-          <div class="technologyMultiplanet_content_advantage">
-            <div class="technologyMultiplanet_content_advantage_delimeter">
-            </div>
-            <div class="technologyMultiplanet_content_advantage_content">
-              <div class="technologyMultiplanet_content_advantage_header">
-                platform compatibility
-              </div>
-              <div class="technologyMultiplanet_content_advantage_text">
-                Our SDK supports all currently relevant platforms (web, mobile, desktop, VR, Xbox, PlayStation), what
-                could be better?
+              <div class="technologyMultiplanet_content_advantage_content">
+                <div class="technologyMultiplanet_content_advantage_header">
+                  web3 integration
+                </div>
+                <div class="technologyMultiplanet_content_advantage_text">
+                  connect any EVM blockchain to your game and enjoy the possibilities of the web3 world
+                </div>
               </div>
             </div>
+            <div class="technologyMultiplanet_content_advantage">
+              <div class="technologyMultiplanet_content_advantage_delimeter">
+              </div>
+              <div class="technologyMultiplanet_content_advantage_content">
+                <div class="technologyMultiplanet_content_advantage_header">
+                  Complete backend
+                </div>
+                <div class="technologyMultiplanet_content_advantage_text">
+                  you no longer need months of heavy backend development and Microsoft Azure and Microsoft Playfab cloud
+                  computing will provide you with more convenience than you think
+                </div>
+              </div>
+            </div>
+            <div class="technologyMultiplanet_content_advantage">
+              <div class="technologyMultiplanet_content_advantage_delimeter">
+              </div>
+              <div class="technologyMultiplanet_content_advantage_content">
+                <div class="technologyMultiplanet_content_advantage_header">
+                  platform compatibility
+                </div>
+                <div class="technologyMultiplanet_content_advantage_text">
+                  Our SDK supports all currently relevant platforms (web, mobile, desktop, VR, Xbox, PlayStation), what
+                  could be better?
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="technologyMultiplanet_content_element" id="navigatorBlock3">
-          <div class="technologyMultiplanet_content_largeHeader gradientText">
-            NEW GAMES - NEW SDK FEATURES
-          </div>
-          <div class="technologyMultiplanet_content_p">
-            We are constantly updating our products, as well as releasing new ones! Follow us and find out about
-            upcoming innovations, become test participants, and receive prizes
-          </div>
-          <div class="technologyMultiplanet_content_buttons">
-            <button class="technologyMultiplanet_content_buttons_soon">
-              COMING SOON
-            </button>
-            <div class="technologyMultiplanet_content_buttons_discuss_wrapper">
-              <button class="technologyMultiplanet_content_buttons_discuss">
-                Let's Discuss
+          <div class="technologyMultiplanet_content_element" id="navigatorBlock3">
+            <div class="technologyMultiplanet_content_largeHeader gradientText">
+              NEW GAMES - NEW SDK FEATURES
+            </div>
+            <div class="technologyMultiplanet_content_p">
+              We are constantly updating our products, as well as releasing new ones! Follow us and find out about
+              upcoming innovations, become test participants, and receive prizes
+            </div>
+            <div class="technologyMultiplanet_content_buttons">
+              <button class="technologyMultiplanet_content_buttons_soon">
+                COMING SOON
               </button>
-            </div>
-          </div>
-          <div class="technologyMultiplanet_content_advantage">
-            <div class="technologyMultiplanet_content_advantage_delimeter">
-            </div>
-            <div class="technologyMultiplanet_content_advantage_content">
-              <div class="technologyMultiplanet_content_advantage_header">
-                Cosmic plans
-              </div>
-              <div class="technologyMultiplanet_content_advantage_text">
-                We want to build an entire ecosystem for gamers and developers, with interesting games from us and from
-                third-party developers.
+              <div class="technologyMultiplanet_content_buttons_discuss_wrapper">
+                <button class="technologyMultiplanet_content_buttons_discuss">
+                  Let's Discuss
+                </button>
               </div>
             </div>
-          </div>
-          <div class="technologyMultiplanet_content_advantage">
-            <div class="technologyMultiplanet_content_advantage_delimeter">
-            </div>
-            <div class="technologyMultiplanet_content_advantage_content">
-              <div class="technologyMultiplanet_content_advantage_header">
-                upcoming projects
+            <div class="technologyMultiplanet_content_advantage">
+              <div class="technologyMultiplanet_content_advantage_delimeter">
               </div>
-              <div class="technologyMultiplanet_content_advantage_text">
-                We are preparing new games for you while you are reading this! For some time we will present you new
-                games, as well as new features.
-              </div>
-            </div>
-          </div>
-          <div class="technologyMultiplanet_content_advantage">
-            <div class="technologyMultiplanet_content_advantage_delimeter">
-            </div>
-            <div class="technologyMultiplanet_content_advantage_content">
-              <div class="technologyMultiplanet_content_advantage_header">
-                regular updates
-              </div>
-              <div class="technologyMultiplanet_content_advantage_text">
-                Our team constantly monitors the performance of our products and promptly solves all incoming problems.
-                Did you find any Error? Let us know!
+              <div class="technologyMultiplanet_content_advantage_content">
+                <div class="technologyMultiplanet_content_advantage_header">
+                  Cosmic plans
+                </div>
+                <div class="technologyMultiplanet_content_advantage_text">
+                  We want to build an entire ecosystem for gamers and developers, with interesting games from us and
+                  from
+                  third-party developers.
+                </div>
               </div>
             </div>
+            <div class="technologyMultiplanet_content_advantage">
+              <div class="technologyMultiplanet_content_advantage_delimeter">
+              </div>
+              <div class="technologyMultiplanet_content_advantage_content">
+                <div class="technologyMultiplanet_content_advantage_header">
+                  upcoming projects
+                </div>
+                <div class="technologyMultiplanet_content_advantage_text">
+                  We are preparing new games for you while you are reading this! For some time we will present you new
+                  games, as well as new features.
+                </div>
+              </div>
+            </div>
+            <div class="technologyMultiplanet_content_advantage">
+              <div class="technologyMultiplanet_content_advantage_delimeter">
+              </div>
+              <div class="technologyMultiplanet_content_advantage_content">
+                <div class="technologyMultiplanet_content_advantage_header">
+                  regular updates
+                </div>
+                <div class="technologyMultiplanet_content_advantage_text">
+                  Our team constantly monitors the performance of our products and promptly solves all incoming
+                  problems.
+                  Did you find any Error? Let us know!
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="technologyMultiplanet_content_element" id="navigatorBlock4">
-          <div class="technologyMultiplanet_content_largeHeader gradientText">
-            Look at how it's done
-          </div>
-          <div class="technologyMultiplanet_content_p">
-            At LayerGame, we are dedicated to crafting a diverse portfolio of games that caters to the unique tastes and
-            preferences of every kind of gamer
-          </div>
-          <div class="technologyMultiplanet_content_buttons">
-            <button class="technologyMultiplanet_content_buttons_soon">
-              Try Beta
-            </button>
-            <div class="technologyMultiplanet_content_buttons_discuss_wrapper">
-              <button class="technologyMultiplanet_content_buttons_discuss">
-                Let's Discuss
+          <div class="technologyMultiplanet_content_element" id="navigatorBlock4">
+            <div class="technologyMultiplanet_content_largeHeader gradientText">
+              Look at how it's done
+            </div>
+            <div class="technologyMultiplanet_content_p">
+              At LayerGame, we are dedicated to crafting a diverse portfolio of games that caters to the unique tastes
+              and
+              preferences of every kind of gamer
+            </div>
+            <div class="technologyMultiplanet_content_buttons">
+              <button class="technologyMultiplanet_content_buttons_soon">
+                Try Beta
               </button>
+              <div class="technologyMultiplanet_content_buttons_discuss_wrapper">
+                <button class="technologyMultiplanet_content_buttons_discuss">
+                  Let's Discuss
+                </button>
+              </div>
+            </div>
+            <div class="technologyMultiplanet_content_advantage">
+              <div class="technologyMultiplanet_content_advantage_delimeter">
+              </div>
+              <div class="technologyMultiplanet_content_advantage_content">
+                <div class="technologyMultiplanet_content_advantage_header">
+                  Satoshi fight club
+                </div>
+                <div class="technologyMultiplanet_content_advantage_text">
+                  Designed to showcase the full
+                  potential of the LayerGame
+                  SDK, this game is currently in
+                  beta and invites players to
+                  explore a new realm of
+                  possibilities.
+                </div>
+              </div>
+            </div>
+            <div class="technologyMultiplanet_content_advantage">
+              <div class="technologyMultiplanet_content_advantage_delimeter">
+              </div>
+              <div class="technologyMultiplanet_content_advantage_content">
+                <div class="technologyMultiplanet_content_advantage_header">
+                  web3 casual bundle
+                </div>
+                <div class="technologyMultiplanet_content_advantage_text">
+                  Casual WEB3 Bundle - is the second game in the LayerGame ecosystem. <br><br> Estimated release date -
+                  Q1
+                  2024
+                </div>
+              </div>
+            </div>
+            <div class="technologyMultiplanet_content_advantage">
+              <div class="technologyMultiplanet_content_advantage_delimeter">
+              </div>
+              <div class="technologyMultiplanet_content_advantage_content">
+                <div class="technologyMultiplanet_content_advantage_header">
+                  web3 fire
+                </div>
+                <div class="technologyMultiplanet_content_advantage_text">
+                  It is a mobile game that has all the features of a top-notch shooter. Hundreds of different weapons,
+                  skins for them, unique characters, battle royale mode and much more.
+                  <br><br>
+                  Estimated release date - Q3 2024
+                </div>
+              </div>
             </div>
           </div>
-          <div class="technologyMultiplanet_content_advantage">
-            <div class="technologyMultiplanet_content_advantage_delimeter">
-            </div>
-            <div class="technologyMultiplanet_content_advantage_content">
-              <div class="technologyMultiplanet_content_advantage_header">
-                Satoshi fight club
-              </div>
-              <div class="technologyMultiplanet_content_advantage_text">
-                Designed to showcase the full
-                potential of the LayerGame
-                SDK, this game is currently in
-                beta and invites players to
-                explore a new realm of
-                possibilities.
-              </div>
-            </div>
-          </div>
-          <div class="technologyMultiplanet_content_advantage">
-            <div class="technologyMultiplanet_content_advantage_delimeter">
-            </div>
-            <div class="technologyMultiplanet_content_advantage_content">
-              <div class="technologyMultiplanet_content_advantage_header">
-                web3 casual bundle
-              </div>
-              <div class="technologyMultiplanet_content_advantage_text">
-                Casual WEB3 Bundle - is the second game in the LayerGame ecosystem. <br><br> Estimated release date - Q1
-                2024
-              </div>
-            </div>
-          </div>
-          <div class="technologyMultiplanet_content_advantage">
-            <div class="technologyMultiplanet_content_advantage_delimeter">
-            </div>
-            <div class="technologyMultiplanet_content_advantage_content">
-              <div class="technologyMultiplanet_content_advantage_header">
-                web3 fire
-              </div>
-              <div class="technologyMultiplanet_content_advantage_text">
-                It is a mobile game that has all the features of a top-notch shooter. Hundreds of different weapons,
-                skins for them, unique characters, battle royale mode and much more.
-                <br><br>
-                Estimated release date - Q3 2024
-              </div>
-            </div>
-          </div>
-        </div>
 
+        </div>
       </div>
     </div>
+
     <div class="technologyTokenInfo container">
       <div class="technologyTokenInfo_content" id="navigator2content">
         <div class="technologyTokenInfo_content_decor">
-          <div class="free_img">
+          <div class="free_img" id='navSecondPlanet'>
             <img src="/img/technology/planet2.png" alt="">
           </div>
         </div>
@@ -433,31 +496,31 @@
             Navigation
           </div>
           <div class="technologyMultiplanet_navigator_list">
-            <a href="#navigator2_1_block" id="navigator2_1_link" class="technologyMultiplanet_navigator_element ">
+            <a id="navigator2_1_link" class="technologyMultiplanet_navigator_element ">
               <img src="/img/technology/navigatorElementDecor.png" alt="">
               <div class="technologyMultiplanet_navigator_element_text gradientText">
                 LayerGame SDK Subscription Payment
               </div>
             </a>
-            <a href="#navigator2_2_block" id="navigator2_2_link" class="technologyMultiplanet_navigator_element">
+            <a id="navigator2_2_link" class="technologyMultiplanet_navigator_element">
               <img src="/img/technology/navigatorElementDecor.png" alt="">
               <div class="technologyMultiplanet_navigator_element_text gradientText">
                 In-Game Currency in All Games
               </div>
             </a>
-            <a href="#navigator2_3_block" id="navigator2_3_link" class="technologyMultiplanet_navigator_element">
+            <a id="navigator2_3_link" class="technologyMultiplanet_navigator_element">
               <img src="/img/technology/navigatorElementDecor.png" alt="">
               <div class="technologyMultiplanet_navigator_element_text gradientText">
                 Staking & Farming
               </div>
             </a>
-            <a href="#navigator2_4_block" id="navigator2_4_link" class="technologyMultiplanet_navigator_element">
+            <a id="navigator2_4_link" class="technologyMultiplanet_navigator_element">
               <img src="/img/technology/navigatorElementDecor.png" alt="">
               <div class="technologyMultiplanet_navigator_element_text gradientText">
                 Trading
               </div>
             </a>
-            <a href="#navigator2_5_block" id="navigator2_5_link" class="technologyMultiplanet_navigator_element">
+            <a id="navigator2_5_link" class="technologyMultiplanet_navigator_element">
               <img src="/img/technology/navigatorElementDecor.png" alt="">
               <div class="technologyMultiplanet_navigator_element_text gradientText">
                 Burn

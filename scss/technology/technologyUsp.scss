@@ -1,6 +1,7 @@
 .technologyUsp {
     padding-top: 220px;
     width: 100%;
+    min-height: 100vh;
 
     &_header {
         font-size: 128px;
@@ -22,9 +23,12 @@
             height: 60px;
             margin-top: 30px;
             justify-content: center;
-            font-weight: 600;
-            font-size: 28px;
 
+            &_text {
+                transition: 200ms transform;
+                font-weight: 600;
+                font-size: 28px;
+            }
 
             &_decorTop {
                 width: 100%;
@@ -52,6 +56,12 @@
                         width: 24px;
                     }
                 }
+            }
+        }
+
+        &_link:hover {
+            .technologyUsp_addittional_link_text {
+                transform: scale(1.1);
             }
         }
 

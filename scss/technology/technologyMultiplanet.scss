@@ -3,6 +3,9 @@
     display: flex;
     gap: 80px;
 
+    &_wrapper {
+        overflow: hidden;
+    }
 
     &_navigator {
         padding-top: 30px;
@@ -78,20 +81,26 @@
         width: 100%;
 
         &_element:not(:first-child) {
-            margin-top: 150px;
+            padding-top: 150px;
         }
 
         &_decor {
             .free_img {
-                z-index: -1;
-                opacity: 0.3;
+                z-index: 0;
+                // opacity: 0.3;
                 left: 600px;
                 justify-content: center;
                 align-items: baseline;
+
+                img {
+                    filter: brightness(0.4);
+                }
             }
         }
 
         &_advantage {
+            position: relative;
+            z-index: 1;
             margin-top: 60px;
 
             &_delimeter {
@@ -128,6 +137,8 @@
             text-transform: uppercase;
             font-size: 90px;
             font-weight: 700;
+            position: relative;
+            z-index: 1;
         }
 
         &_p {
@@ -136,6 +147,8 @@
             font-size: 40px;
             color: #8C8B92;
             text-transform: capitalize;
+            position: relative;
+            z-index: 1;
         }
 
         &_buttons {
@@ -143,11 +156,25 @@
             display: flex;
             gap: 50px;
 
+            position: relative;
+            z-index: 1;
+
             &_soon,
             &_discuss_wrapper {
                 height: 70px;
                 background: linear-gradient(120deg, #30BBEE, #C659FC);
                 border-radius: 10px;
+            }
+
+            &_soon,
+            &_discuss {
+                transition: 200ms transform;
+            }
+
+            &_soon:hover,
+            &_discuss:hover {
+                cursor: pointer;
+                transform: scale(1.1);
             }
 
             &_discuss_wrapper {
