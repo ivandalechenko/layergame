@@ -5,6 +5,7 @@
 
     @media(max-width: 550px) {
         padding-top: 20vh;
+        min-height: 0px;
     }
 
     &_header {
@@ -63,6 +64,7 @@
 
                 .free_img {
                     align-items: baseline;
+                    justify-content: right;
 
                     img {
                         width: 24px;
@@ -77,6 +79,7 @@
 
                 .free_img {
                     align-items: end;
+                    justify-content: left;
 
                     img {
                         width: 24px;

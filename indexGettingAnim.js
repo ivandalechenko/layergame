@@ -84,8 +84,7 @@ const indexGetting = (gsap) => {
         }
     })
     gsap.to('#indexKnow_decorBluePlanet', {
-        y: 200,
-        x: -300,
+        y: 600,
         scrollTrigger: {
             trigger: '#indexKnow_decorBluePlanet',
             // markers: true,
@@ -94,9 +93,21 @@ const indexGetting = (gsap) => {
             end: '1000 60%',
         }
     })
+    gsap.fromTo('#indexKnow_decorBluePlanet', {
+        opacity: 0
+    },
+        {
+            opacity: 1,
+            scrollTrigger: {
+                trigger: '#indexKnow_decorBluePlanet',
+                // markers: true,
+                scrub: 1,
+                start: '-300 60%',
+                end: '-100 60%',
+            }
+        })
     gsap.to('#indexKnow_decorRedPlanet', {
-        y: 100,
-        x: 100,
+        y: 200,
         scrollTrigger: {
             trigger: '#indexKnow_decorRedPlanet',
             // markers: true,
@@ -105,6 +116,19 @@ const indexGetting = (gsap) => {
             end: '1000 60%',
         }
     })
+    gsap.fromTo('#indexKnow_decorRedPlanet', {
+        opacity: 0
+    },
+        {
+            opacity: 1,
+            scrollTrigger: {
+                trigger: '#indexKnow_decorRedPlanet',
+                // markers: true,
+                scrub: 1,
+                start: '-300 60%',
+                end: '-10 60%',
+            }
+        })
 }
 
 export default indexGetting

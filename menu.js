@@ -1,7 +1,10 @@
 const menu = (gsap) => {
 
-    document.getElementById('menuOpener').onclick = () => {
-        document.getElementById('menu').classList.toggle('menu_open')
+    document.getElementById('menuOpener').onmouseenter = () => {
+        document.getElementById('menu').classList.add('menu_open')
+    }
+    document.getElementsByClassName('menu_inner_wrapper')[0].onmouseleave = () => {
+        document.getElementById('menu').classList.remove('menu_open')
     }
 
     document.getElementById('menuNavLinkTechnology').onmouseenter = () => {

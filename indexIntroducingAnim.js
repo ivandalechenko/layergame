@@ -13,6 +13,18 @@ const indexIntroducing = (gsap) => {
             end: '100% 70%',
         }
     })
+    gsap.to('.indexStarHider', {
+        opacity: 0,
+        scrollTrigger: {
+            trigger: '.indexIntroducing',
+            scrub: 1,
+            // markers: true,
+            start: 'top 50%',
+            end: '100% 50%',
+        }
+    })
+
+
     gsap.to(".comet1", {
         opacity: 1,
         ease: "none",

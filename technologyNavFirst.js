@@ -53,8 +53,8 @@ const navFirst = (gsap) => {
         y: 4000,
         scrollTrigger: {
             trigger: '#navigatorContent',
-            scrub: 1,
-            start: 'top bottom',
+            scrub: 3,
+            start: 'top top',
         }
     })
 
@@ -121,7 +121,7 @@ const navFirst = (gsap) => {
             pin: true,
             scrollTrigger: {
                 trigger: '#navigatorContent',
-                scrub: true,
+                scrub: 1,
                 start: '400px top',
                 end: '100% top'
             }
