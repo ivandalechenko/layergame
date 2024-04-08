@@ -8,10 +8,11 @@ document.getElementById('menuOpener').onclick = () => {
 }
 import menu from './menu'
 menu(gsap)
-import './hideLoader.js'
+import hideLoader from './hideLoader.js'
 
 
-setTimeout(() => {
+
+window.onload = function () {
     let mm = gsap.matchMedia();
     // USP хедер
     gsap.to('#ourMissionUspText', { duration: 4, text: { value: "Welcome aboard the LAYERGAME Space Station!" } })
@@ -219,10 +220,8 @@ setTimeout(() => {
 
     // Запуск анимации при загрузке страницы
     restartAnimation();
-
-
-}, 500);
-
+    hideLoader();
+}
 try {
     // Выпадалочки (все)
     const dds = document.getElementsByClassName('ddOpener');

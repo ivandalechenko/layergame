@@ -11,14 +11,10 @@ import indexIntroducing from './indexIntroducingAnim.js'
 import indexRoadmap from './indexRoadmapAnim.js'
 import indexGetting from './indexGettingAnim.js'
 
-import './hideLoader.js'
-
 menu(gsap);
+import hideLoader from './hideLoader.js'
 
-
-
-setTimeout(() => {
-
+window.onload = function () {
     gsap.to('.indexUsp_header', {
         opacity: 1,
         duration: 2,
@@ -39,7 +35,5 @@ setTimeout(() => {
     mm.add("(max-width: 900px)", () => {
         animOrbit(gsap, 2)
     });
-
-
-
-}, 500);
+    hideLoader()
+};

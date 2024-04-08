@@ -6,21 +6,22 @@ import menu from './menu'
 import faqDds from './faqDds'
 import navFirst from './technologyNavFirst'
 import navSecond from './technologyNavSecond'
-import './hideLoader.js'
 
 
 
 faqDds();
 menu(gsap);
 
+import hideLoader from './hideLoader.js'
 
-setTimeout(() => {
+
+window.onload = function () {
 
     let mm = gsap.matchMedia();
     mm.add("(min-width: 900px)", () => {
         navFirst(gsap);
         navSecond(gsap);
     });
+    hideLoader()
 
-
-}, 500);
+}
