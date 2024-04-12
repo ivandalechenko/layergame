@@ -15,25 +15,29 @@ menu(gsap);
 import hideLoader from './hideLoader.js'
 
 window.onload = function () {
-    gsap.to('.indexUsp_header', {
-        opacity: 1,
-        duration: 2,
-        delay: 1,
-    })
+    setTimeout(() => {
 
-    gsap.to('.indexUsp_p', { duration: 2, text: { value: "Blurring the lines between Web2 and Web3" } })
-    let mm = gsap.matchMedia();
-    mm.add("(min-width: 900px)", () => {
-        teamList(ScrollTrigger, gsap)
-        uspAnim(gsap)
-        indexIntroducing(gsap)
-        indexRoadmap(gsap)
-        indexGetting(gsap)
-        animOrbit(gsap)
-    });
+        gsap.to('.indexUsp_header', {
+            opacity: 1,
+            duration: 2,
+            delay: 1,
+        })
 
-    mm.add("(max-width: 900px)", () => {
-        animOrbit(gsap, 2)
-    });
-    hideLoader()
+        gsap.to('.indexUsp_p', { duration: 2, text: { value: "Blurring the lines between Web2 and Web3" } })
+        let mm = gsap.matchMedia();
+        mm.add("(min-width: 900px)", () => {
+            teamList(ScrollTrigger, gsap)
+            uspAnim(gsap)
+            indexIntroducing(gsap)
+            indexRoadmap(gsap)
+            indexGetting(gsap)
+            animOrbit(gsap)
+        });
+
+        mm.add("(max-width: 900px)", () => {
+            animOrbit(gsap, 2)
+        });
+        hideLoader()
+    }, 500);
 };
+

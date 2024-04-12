@@ -109,7 +109,6 @@ const navFirst = (gsap) => {
         gsap.to('#navigator', {
             y: document.getElementById('navigatorContent').getBoundingClientRect().height - 400,
             ease: 'none',
-            pin: true,
             scrollTrigger: {
                 trigger: '#navigatorContent',
                 scrub: 0,

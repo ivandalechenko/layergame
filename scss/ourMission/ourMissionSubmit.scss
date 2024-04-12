@@ -181,11 +181,17 @@
             color: white;
             background: linear-gradient(120deg, #30BBEE, #C659FC);
             border-radius: 10px;
+            transition: 300ms transform;
 
             @media(max-width: 1000px) {
                 font-size: 18px;
                 height: 50px;
             }
+        }
+
+        &_btn:hover {
+            cursor: pointer;
+            transform: scale(1.1);
         }
 
     }

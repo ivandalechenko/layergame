@@ -260,6 +260,8 @@
             &_soon,
             &_discuss {
                 transition: 200ms transform;
+                display: flex;
+                align-items: center;
             }
 
             &_soon:hover,

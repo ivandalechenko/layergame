@@ -16,12 +16,13 @@ import hideLoader from './hideLoader.js'
 
 
 window.onload = function () {
-
-    let mm = gsap.matchMedia();
-    mm.add("(min-width: 900px)", () => {
-        navFirst(gsap);
-        navSecond(gsap);
-    });
-    hideLoader()
+    setTimeout(() => {
+        let mm = gsap.matchMedia();
+        mm.add("(min-width: 900px)", () => {
+            navFirst(gsap);
+            navSecond(gsap);
+        });
+        hideLoader()
+    }, 500);
 
 }

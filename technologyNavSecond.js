@@ -2,7 +2,6 @@ const navSecond = (gsap) => {
     gsap.to('#navigator2', {
         y: document.getElementById('navigator2content').getBoundingClientRect().height - 400,
         ease: 'none',
-        pin: true,
         scrollTrigger: {
             trigger: '#navigator2content',
             scrub: 0,
